@@ -1,0 +1,593 @@
+Changelog.
+
+Fri Jan 29 21:52)19 PST 2010
+- if libmeas is not installed, do not compile the measurement interface.
+
+Mon Nov 23 20:46:53 PST 2009
+- changed from xmgrace to qtiplot (available from yum)
+
+Mon Oct 12 11:54:27 PDT 2009
+- Instrument support dropped for Varian and Bruker ER200.
+- Updated instrument support for Bruker ESP-300, which includes
+  old Bruker (Aspect based) ENDOR/TRIPLE.
+- major code restructuring
+- migrated to libmeas
+
+--- version 0.8 ---
+
+Fri May 18 20:40:08 PDT 2007
+- Fixed compilation problems on Linux. Changed xmgr -> xmgrace.
+
+Mon Jun 14 16:20:17 EEST 2004
+- disabled use of ARPACK - it is more or less useless here
+- disabled use of MINPACK - it is more or less useless here
+- Update Makefile compilation options
+- minor changes to kinetics measurement interface
+- It is now possible to specify location of XForms in the main Makefile
+- The code compiles now on MacOS X as well (using Apple X11)
+- Two separate Makefiles: Makefile.linux and Makefile.macosx
+  (use ln -s Makefile.xxx Makefile to activate)
+- increased MAXPEAKS
+- primitive parallel support using auto parallelization with OpenMP
+
+Fri Feb 27 19:42:13 EET 1998
+- Updated Simulate -> Print parameters
+- Fixed Norris exchange simulation
+- Fixed Rate constant dialog (no longer core dumps)
+- Change normalization constant in 1st order simulation
+  (now normalized according to the number of transitions instead
+   of peaks)
+- Numerical stabilization hacks for Heinzer simulation - it still
+  doesn't work properly.
+- Document updates
+- Example updates
+
+Sat Feb 28 09:58:36 EET 1998
+- Keyboard shortcuts for: cursors, x & y zoom/unzoom:
+  Insert = cursor speed, Home = Zoom-x, End = Unzoom-x,
+  Page Up = Zoom-y, Page Down = Unzoom-y, left&right arrows
+  = left cursor, up&down arrows = right cursor. F1 - F12 select
+  the corresponding spectrum pages (ie. 0 thru 11).
+- Added iconify (+ icon - atomic nitrogen spectrum in Argon matrix ;-)
+- Added support more nuclei - changed text size in popup menus.
+
+Sun Mar  1 12:23:26 EET 1998
+- Fixed DFL/IS variable settings when using Norris exchange model.
+
+Wed Mar  4 10:37:46 EET 1998
+- NEQUIV is now 90 in xemr/tune.h
+
+Thu Mar  5 10:41:00 EET 1998
+- For FFT LS the intensities are now multiplied by 1E8 in order to 
+  avoid huge amplitudes.
+
+Fri Mar  6 13:52:19 EET 1998
+- Switched to RedHat 5.0 (+glibc) and egcs. Workaround for egcs bug (see
+  xemr/main.c and search for a word bug)
+- Asymmetric lw example
+- Quick powder LS (actually the right way to do it when only one spectrum
+  present)
+
+--- 0.4.1 released ---
+
+Sat Mar  7 19:23:23 EET 1998
+- Added identifier for variables
+- Monte Carlo optimization now also reminds about exceeded limits
+
+Sun Mar  8 10:03:52 EET 1998
+- Switched to the latest BLAS and LAPACK releases (version 9).
+
+Sun Mar  8 18:58:38 EET 1998
+- Initial version of ENDOR spectrum generation. Argh... this is
+  dead wrong... rethink! [this is fixed now]
+
+Fri Mar 20 18:03:43 EET 1998
+- Added field calibration (y = kx+b -type). The default values are for our 
+  esp-380...
+- fixed conflict in lib/file.c of keyword stream (changed to strm).
+  This caused xxx2epr converters to fail.
+
+Sat Mar 21 19:08:40 EET 1998
+- Fixed transition moment operator for nuclei. Nuclear spin start
+  at nel not neccesarily at 1.
+- Fixed ENDOR routine. Added ENDOR single & powder simulations
+  to libepr and xemr interface.
+
+Tue Mar 24 21:14:40 EET 1998
+- Complains if target and exp spectrum pages are the same in fitting
+- axial symmetry can be now performed by restricting sp_theta and
+  sp_phi (earlier this gave incorrect results)
+
+Fri Mar 27 10:41:37 EET 1998
+- Quick powder removed (is now default)
+- Added L = 3 angular momentum data
+- Documentation
+- if the experimental spectrum length was not 2^n and FFT lineshape
+  method was used then the fitting performed the RMS calculation
+  incorrectly.
+
+Sun Mar 29 10:06:29 EEST 1998
+- Updated convolutions (Lorentz, Gauss, other spectrum)
+- Internal parameters are also saved to .sps file.
+- Fixed sp_hamilton_divs bug which sometimes left the high field peaks out
+
+Tue Mar 31 09:50:12 EEST 1998
+- Variables that are not in range now report the indices correctly (+1)
+
+Wed Apr  1 12:44:53 EEST 1998
+- Heinzer exchange part rewritten. Switched to analytical solution.
+  (now Heinzer and Norris give the exact same result ;-)
+
+Fri Apr  3 17:09:23 EEST 1998
+- Fixed MC limit error messaging
+- Fixed intensities in Norris and Heinzer routines
+
+Sat Apr  4 19:03:24 EEST 1998
+- Numerical transition moment calculation now uses much less memory
+  + added inlining to the intensity calculation routine
+- Fixed '.' problem in file conversion.
+- Updated esp2epr filter.
+- Updated spectrum structure and file functions.
+- Updated Edit->Parameters dialog (completed info for ENDOR and TRIPLE)
+- Added export ASCII function
+- Documentation updates (examples)
+
+Sun Apr  5 16:20:12 EEST 1998
+- Hydroquinone exchange simulation example
+
+Mon Apr 13 17:37:13 EEST 1998
+- Updates to hydroquinone example
+- Fixed rpm spec file
+- Examples get installed now too
+
+Mon May 11 08:34:30 EEST 1998
+- Fixed a typo in file conversion
+
+Wed May 13 17:56:31 EEST 1998
+- Added 1st order ENDOR simulation (isotropic only) which is useful
+  (in combination with fitting) of getting HFCs with better accuracy
+  from ENDOR spectra
+
+Fri May 15 12:00:36 EEST 1998
+- Fixed shrink (x-axis is now also updated)
+- symmetry smooth cancel no longer generates core ...
+
+Sat May 16 16:02:23 EEST 1998
+- M-L non-linear least squares algorithm from the MINPACK library
+  can now be used in minimization
+
+Tue May 19 18:02:47 EEST 1998
+- Fixed the varian EPR measurement interface
+- Added copy current page function to Edit menu
+- Changed the kinetic run behaviour
+
+Sat May 23 13:07:21 EEST 1998
+- Added support for manual scan mode for measurement
+- Interface for Bruker ER-200D EPR, ENDOR and TRIPLE started
+
+Wed Jun 10 14:18:56 EEST 1998
+- 1st order ENDOR lw & amp no longer shows params for nuclei > ngr
+- 1st order ENDOR lw & amp high and low fields were mixed.
+
+Wed Jun 24 19:12:02 EEST 1998
+- Print simulation params now also prints the exp. spectrum name
+
+Mon Jul  6 21:36:52 EEST 1998
+- Fixed G (or mT) -> MHz conversion in xemr/dialog.c
+  it now accounts for g value.
+- It now again compiles on sgi
+- Cleaned up measurement routines
+
+Wed Jul 22 18:57:39 EEST 1998
+- EPR (rewritten), ENDOR, and TRIPLE measruement routines
+  (See lib/systems/README for specification)
+- Low level spectrometer routines rewritten
+- Initial implementation for Bruker ER200D EPR/ENDOR/TRIPLE spectrometer
+
+Mon Jul 27 21:29:13 EEST 1998
+- Aspect slow serial bus hacking. The temperature controller works now.
+  Still no docs on wavetek :-(
+- Added temperature controller routines.
+- Modified the main makefile for selection of spectrometer
+- Added directory search for spectra
+
+Tue Jul 28 21:57:58 EEST 1998
+- Added clear simulation parameters function
+- Added xemr.csh front end script for handling different spectrometers
+
+Wed Jul 29 12:30:50 EEST 1998
+- Added number of scans display
+
+Fri Aug  7 09:46:12 EEST 1998
+- ER200D EPR part works now - first EPR spectrum measured!
+  (ER 033M lock sucks! It drops IEC625 command every now and then)
+- Added set center field and scan width by cursors
+- Params dialog now has center field and sweep width settings rather
+  than begin and end.
+- Modified variable dialog (mclimit in %, value is shown and is editable,
+  active buttons for variables)
+
+Wed Aug 26 08:37:55 EEST 1998
+- Fixed 1st order ENDOR paramter printing
+- ER200D debugging
+- Fixed multiple electron coupling to nuclei (numerical SH)
+
+Thu Aug 27 16:49:05 EEST 1998
+- Fixed bugs in numerical SH transition moments
+- baseline/spline: no longer crashes if no marks are selected.
+
+Sun Aug 30 20:57:01 EEST 1998
+- The "Knight example" works now...
+
+Sun Sep 13 22:19:12 EEST 1998
+- A bug in ENDOR measurement: no RF power is coming out (switches or
+  attenuators) - no fix yet
+- upgraded to egcs-1.1. Minor fixes to utils/*.c for egcs...
+
+Tue Sep 22 18:15:52 EEST 1998
+- Fixed a bug in ER200D endor interface. The documentation on attenuator
+  settings is incorrect in the manual. Now ENDOR and TRIPLE general
+  work ok. Still problems with TRIPLE special.
+
+Wed Sep 23 20:40:39 EEST 1998
+- Inital implementation of ESP-300 measurement interface. NOT TESTED YET
+  and contains bugs for sure.
+
+Thu Sep 24 20:09:20 EEST 1998
+- The hyperfine editor should not show NaNs anymore
+- Cancel delayed works now
+- Transition moment diagrams
+
+Sat Sep 26 15:40:07 EEST 1998
+- added ENDOR induced EPR mode
+- removed the manuals stuff from measure.c. If magnet or nmr control is
+  not available then the program aborts.
+- Break / Pause key turns the mw and nmr fields off. (ie. ctrl-e in aspect)
+- spectrometer calibration setup + auto tune mode for max. modulation
+  and signal phase.
+- fixed modulation, signal phase, and receiver gain settings in esp300
+- fixed (nmr) modulation in er200d
+
+Tue Sep 29 16:14:46 EEST 1998
+- The choice numbers were incorrect for powder spectrum generation
+  (at least for 1st order epr) - fixed in xemr/main.c
+- The transition moment diagram stuff had mixed up the numerical SH
+  -- works now again...
+- numerical SH for EPR: the transition moment matrix is symmetric,
+  only half of it is now computed.
+
+Thu Oct  1 14:03:13 EEST 1998
+- ER200D ENDOR modulation scale fixed (again).
+- ENDOR induced EPR mode works now.
+- TRIPLE special mode works now.
+- added igloo type mesh to powder integrator (now both regular and igloo
+  can be used)
+- The user interface now displays cpu time consumed in particular simulation
+
+Fri Oct  2 16:07:48 EEST 1998
+- Fixed ER200D EPR field settings (wrong lock offsets)
+- A test implementation of even megahertz problem on endor/triple (ER200D)
+  (the frequency appears to jump around somewhat when fine freq setting
+   is zero)
+
+Sat Oct  3 15:45:33 EEST 1998
+- Simlation / fitting now also reports cpu times
+- Fixed PO23+ example (FFT linshape bug removed)
+
+Sun Oct  4 13:45:14 EEST 1998
+- Changed to FFT routines (libfftw-2.0.1). Unfortunately this changed
+  the intensity scaling, so amplitude settings need to be updated.
+  This change also resolves the patent issues that were involved with
+  the previous FFT routines. Also the power of two requirement is gone.
+- Spectrum differentation now works in Fourier space when generating
+  derivative spectra
+- Switched to linux-gpib-2.04 which supports variety of gpib cards.
+  The driver appears to much better than the one I used previously!
+
+Mon Oct  5 10:21:39 EEST 1998
+- SGI support dropped. Too many things are broken, different, etc.
+  I hope SGIs run Linux soon so that things start working again ;-)
+
+Thu Oct  8 22:12:55 EEST 1998
+- Added fictious spin representation to numerical spin hamiltonian
+- Fixed FFT lineshape generation bug (with certain width/resolution
+  combinations strange spectra were obtained)
+
+Fri Oct  9 14:27:36 EEST 1998
+- Fixed kinetic operation mode of EPR and ENDOR measurement
+  (xbeg = xend, samples amount of steps)
+- Fixed DE(J) setting in S.D.S for fictious spin case
+
+Sat Oct 10 18:36:06 EEST 1998
+- Documentation updates
+- Due to public demands the font size is now bigger...
+- Template spectrum concept (template spectra for EPR, ENDOR, TRIPLE, etc)
+- Breit-Rabi graphs now respect fictious spin selection
+- Higher optimization flags for gcc
+
+Fri Oct 23 08:47:12 EEST 1998
+- The new compilation options caused the conversion utilities to fail
+  (fixed)
+- More problems fixed in esp2epr conversion utility
+- Varian measurement interface fixes (it works again...)
+
+Thu Oct 29 08:42:33 EET 1998
+- Added a new linshape model. Gaussian distributed Lorentzians.
+  Both can have their own linewidths (ie. llw = 0 -> pure gaussian).
+
+Wed Nov  4 10:20:40 EET 1998
+- fixed epr kinetic mode
+- TRIPLE pumping freq. problems fixed for ER200D
+
+Thu Nov 12 10:01:28 EET 1998
+- fixed x and xy conversions
+
+Thu Dec 03 17:50:22 EET 1998
+- Fixed a typo in parameter print out (the exp. file spectrum name is now
+  printed correctly)
+- Added microwave frequency to parameter print out
+
+Tue Dec  8 09:48:57 EET 1998
+- Exp. resolution can now be upto 64K. + maximum sample size
+  enhanced to 64 K.
+
+Tue Dec 22 10:42:15 EET 1998
+- Added a simple programming example using LIBEPR (examples/programming)
+  and one example using it.
+
+Fri Jan  8 14:41:12 EET 1999
+- Fixed convolution routines (hopefully everything is ok now..)
+- Added cross/auto correlation 
+
+Thu Jan  14 10:45:14 EET 1999
+- Numerical solution of SH now recognized transitions which have
+  reversed energy dependence on field strength. (For example nuclear
+  transitions in atomic Cu)
+
+Fri Jan  15 15:32:58 EET 1999
+- Correlation and convolution axis fixes.
+- Windowing in Fourier space
+- Cu atom example + BR graphs
+
+Thu Jan  21 19:20:03 EET 1999
+- Major modifications to measurement interface
+- ESP300 (CW) interface appears to work now (still problems with DMA)
+
+-- 0.7 released --
+
+Thu Feb 11 14:14:10 EET 1999
+- Cepstral analysis and power spectrum added.
+- Fourier space axis is now correct (for left/real part only).
+
+Sun Feb 14 21:20:56 EET 1999
+- Added more windowin functions
+- there are still numerical stability problems with cepstral analysis.
+  However, the matlab gives exactly same result so libepr works ok.
+  The number of spectral points appears to give better results.
+
+Tue Feb 16 20:16:14 EET 1999
+- changes to windowing functions
+- fixed signal phase correction (given in degrees - cos works in radians)
+
+Thu Feb 18 18:08:49 EET 1999
+- Major speed up for er200d endor scanning.
+  (affects other systems to small extent as well)
+
+Fri Feb 19 18:08:04 EET 1999
+- Changes to varian measurement setup (the intensity is now read directly
+  from behind the signal channel - should have done this in the first place...)
+- The internal gain register in varian (DAS8) can now be adjusted
+  from the program.
+- Corrected typos in varian interfacing documentation
+
+Tue Feb 23 21:43:41 EET 1999
+- more Varian fixes
+
+Fri Feb 26 09:09:46 EET 1999
+- added ang. mom. related stuff (B.L, aS.L and oct/tetr crystal fields 
+  + distortions)
+- ang. mom. is now calculated instead of using arrays
+- L+ and L- operators added (and I identity)
+- fixed a bug in numerical SH: if the same spin was operated twice with
+  an operator that changed the spin state then this was not accounted for!
+  (this error produced incorrect results, for example for: I.P.I and S.D.S
+  systems)
+- added so, cra, and crb to variables
+- load/save now keeps the selected directory
+
+Sat Feb 27 12:35:14 EET 1999
+- some of the baseline stuff rewritten
+- INDEX macro was just the opposite as it should have been
+  (it now gives the correct array ordering required by fortran convention)
+  This may reverse indexing for simulation sets saved before this.
+  (for example, g_ij will now be g_ji... - fortunately these are
+  mostly symmetric). This appears to cure the Heinzer exchange simulation
+  routines.
+- Oh well. The numerical SH matrix construction was somewhat rewritten.
+  Maybe I got it right this time ;-)
+
+Mon Mar  1 11:22:47 EET 1999
+- spin-orbit and crystal field params are now in cm-1.
+- fixed parameter printing problems
+- numer. sh. based epr spectrum simulation routine rewritten so that
+  it consumes much less memory. It might be faster too (at by factor of
+  two for "the Knight example").
+- fixed FFT xbeg and xend
+- esp2epr converter had some inconsistencies...
+
+Tue Mar  2 17:38:37 EET 1999
+- Active space definition: one can now tell which energy levels are considered
+  when calculating the spectrum. However, the eigen solver still produces
+  all the levels - they are just excluded from the transition search.
+
+Wed Mar  3 08:27:24 EET 1999
+- preloader for powder / numerical spin hamilton simulations (speed up)
+- for tetragonal distortion one can now specify x, y and z
+  distortions separately
+- BR graps: GHz or cm-1 energy units
+- the fictious spin now also affects orbital ang. mom. - canceled for
+  now. The crystal field stuff becomes very tiresom to program...
+- some additions to the documentation (numer. spin Hamiltonian)
+- fixed couple of "core dump" problems when operations were issued
+  on an empty page
+
+Fri Mar  5 09:30:42 EET 1999
+- documentation updates on numer. spin hamiltonian
+- new example: quenched boron atom
+- everything can now also be specified in cm-1
+- variables dialog now updates parameter headings during editing
+- ENDOR B was sometimes stored as blank which confused the simulation parameter
+  file reading... - fixed
+
+--- 0.7-2 released ---
+
+Sun Mar  7 22:21:01 EET 1999
+- a factor of half speed up for numer. spin Hamiltonian simulation
+- variables dialog is now smaller
+
+Thu Mar 18 18:34:13 EET 1999
+- Added Boltzmann populations for energy levels which affect the
+  transition intensities.
+
+Tue Mar 23 10:10:31 EET 1999
+- Large arrays are now allocated only when needed in hamilton.c
+  (via malloc()). This solves start up problems on small memory machines
+  (ie. core dumping when xemr was started)
+
+Thu Mar 25 09:13:49 EET 1999
+- Better support for axial symmetry powder spectra
+  (nphi = 1)
+- B2 (triplet Sigma) example
+
+Fri Apr  2 17:07:06 EEST 1999
+- Updated html examples section
+- Documentation updates
+
+Tue Apr 13 07:57:34 EEST 1999
+- Changed numer. diagonalization routine to a faster one
+- Xemr now also works with Intel (pro and II) optimized BLAS library
+  ("ghenry version") - b2 triplet from 54 s to 44 s...
+- fixed a bug in powder spectrum generator: igloo and one dim modes were
+  sometimes set to incorrect values.
+
+Tue Apr 20 10:13:46 EEST 1999
+- fixed a bug in preloader - transition moment operator cannot be preloaded!
+- fixes to ENDOR simulation (numer. spin hamiltoninan)
+- integration intervals can now be specified
+- clean up powder integrator
+
+Sat Apr 24 21:21:37 EEST 1999
+- Fixed naphthoquinone endor simulation example - the difference in line
+  intensities was due to a bug...
+- minor changes to powder integrator
+
+Wed May 19 17:19:02 EEST 1999
+- Switched to portland c-compiler: b2 triplet is now at 39 s ;-)
+  (the code still compiles with gcc - see the main makefile)
+
+Sat Jun  5 10:41:33 EEST 1999
+- Obtained portland group patch for redhat 6.0 - things appear to work now!
+
+Sat Jun 12 07:28:56 EEST 1999
+- One can now visualize: transition moments or transition eigen vector
+  difference (ie. to characterize the transition). It calculates the
+  differences between squares of basis coefficients between given two
+  states.
+- Added "measurement in progress..." indicator
+- minor cleanups for xemr/main.c
+- changed the function of arrows: up & down = scale, left & right = page
+  prev & next
+- fixed parameter setup problem (dlevel & co. were only updated after
+  define simulation dialog)
+- fitting can now also be performed in the freq. space (not tested)
+- Implemented Hooke-Jeeves optimization method
+
+
+Thu Jun 17 22:55:16 EEST 1999
+- Removed % stuff from mc_limit - it was rather unpractical!
+  The mc_limit is now given in difference value.
+- minor speed up to numer SH in misc.c (preload).
+- more speed up for transition moment calculations:
+  The b2 (1500 G) example went from 30 s -> 13 s!
+  For some ENDOR simulations the run time dropped also to one third.
+
+Sun Jun 20 16:29:37 EEST 1999
+- Changed the input scheme for g, A, D, and P tensors. THe user should
+  now input tensor principal values, and the rotation matrix that 
+  provides the relation between the fixed axis system.
+  NOTE: the aliases still use the old notation!
+- fixed powder integrator bug when regular mesh was used.
+- added a check for illegal angle values
+  
+Thu Jun 24 22:02:33 EEST 1999
+- rewriting of powder integration routines. Many different integration
+  algorithms were added.
+- the powder integrator params are now saved to sps files.
+- Added manual RMS spectrum evaluation for spectra on two different pages.
+- Transition to comedi library started (both das8 and 1600 are now supported).
+
+Mon Jun 28 20:50:31 EEST 1999
+- Added linear and cubic spline transition interpolation (transition position
+  and transition moment). This is similar that sophe uses (except that
+  it does cubic spline and linear interpolation at the same time)
+
+Thu Jul  1 17:59:45 EEST 1999
+- Implemented eiven vector following ("level follow"): The eigen ordering 
+  problems should be gone now. However if the spectral range is large then the
+  eigenvectors may have weak correlations to the starting states ->
+  orders may be incorrect.
+- Added peak "padding" in hamilton.c: it now returns the same number of
+  peaks so that the peak positions in peak arrays stays at the same place.
+- BR-gaph now respects level follow. Watch out for this when doing
+  trmom or transition analysis (these do not respect level following!)
+
+Sun Jul  4 12:04:08 EEST 1999
+- the level following works now better. The previous point is used in
+  calculating the correlation matrix.
+
+Fri Oct  1 08:37:34 EEST 1999
+- fixed PEEK_ORDER_HACK bug which sometimes missed peaks.
+- fixed a bug in crystal field code - it was sometimes operating on
+  wrong spin!!!
+- more changes to orbital angular momentum: now it can handle many
+  electrons (the same spin-own-orbit constant for all electrons - 
+  although this can be generalized easily so that each electron
+  could have its' own spin-own-orbit constant).
+- removed value fields in variable dialog: one could accidentally
+  change the values with this!
+- equivalence editor now displays the index texts "on the fly"
+
+Fri Oct  9 08:37:34 EEST 1999
+- fixes to variables and equivalences dialogs
+- updated device drivers to kernel 2.2
+
+Tue Oct 12 20:14:56 EEST 1999
+- fixed a crystal field bug (operators negative multipliers were silently
+  ignored!)
+- crystal field document updates
+
+Tue Oct 22 20:14:56 EEST 1999
+- linear interp. powder integrator typo fix
+- minor clean ups in hamilton.c and powder.c
+- libf2c is no longer needed if portland cc is used (argh... arpack needed it)
+- fixed a preloader bug in misc.c - the number of field indep. hamiltonian 
+  was sometimes wrong.
+- adding empty page as overlay caused core dump
+- added cnvall script which converts all ESP type spectra to xemr format
+  present in the current directory
+
+Sat Oct 30 10:29:34 EEST 1999
+- added magnetic field direction dependend linewidths (for EPR)
+
+Fri Jan 28 10:53:48 EET 2000
+- pressing numbers in xemr main window no longer crashes the program
+
+Fri Feb 18 07:59:19 EET 2000
+- larger peak arrays
+- minor clean up in sp_hamilton_mode (modes now defined in common.h)
+
+Wed Feb 23 12:27:13 EET 2000
+- fixed hfc printing bugs
+
+Tue Mar 28 08:03:59 EEST 2000
+- A new spectrum add mode 

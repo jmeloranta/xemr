@@ -1,0 +1,39 @@
+2
+0.5
+1.0
+#
+# Evaluate eigen vectors and values of LS for two spin system
+# including orbital angular momentum (P)
+#
+# Clear Hamiltonian
+zero
+
+
+diag
+
+# Lx . Sx
+1.0 x 2 x 1
+
+# Ly . Sy
+1.0 y 2 y 1
+
+# Lz . Sz
+1.0 z 2 z 1
+
+# Print Hamiltonian
+print
+# Diagonalize
+diag
+
+zero
+
+# Identify states by (J, M_J)
+1.0 x 1
+1.0 x 2
+1.0 y 1
+1.0 y 2
+1.0 y 1
+1.0 y 2
+expec
+
+exit

@@ -1,0 +1,12 @@
+#!/bin/tcsh -f
+#
+# This script will convert all bruker spectra in one directory
+# to xemr format.
+#
+
+foreach file (*.spc)
+  echo $file
+  set a=`basename $file .spc`
+  esp2epr $a $a
+end
+exit 0

@@ -1,0 +1,9 @@
+Reproduction of Symons et al., JCS, 2873, 1962.
+
+(a picture of the spectrum is also found in The Structure of Inorganic
+Radicals by P. W. Atkins and M. C. R. Symons, 1967). Note that the
+magnetic field increases from right to left.
+
+In the corresponding xmgr graphics file the difference of numerical 
+solution of spin hamiltonian vs. the usual 1st order approximation is shown.
+Only electron spin was included in the transition moment operator.

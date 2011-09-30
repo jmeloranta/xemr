@@ -1,0 +1,13 @@
+XEMR rev. 0.8 (beta) 
+-----------------------
+
+Xemr is a software package written for electron magnetic resonance (EMR)
+spectroscopists. 
+
+*THIS PACKAGE HAS NOT YET BEEN TESTED EXTENSIVELY AND THEREFORE ALL THE RESULTS
+ OBTAINED WITH THIS SOFTWARE SHOULD BE DOUBLE CHECKED!*
+
+See manual.pdf (online or under doc/) for full description.
+
+Jussi Eloranta
+jmeloranta@gmail.com

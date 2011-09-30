@@ -1,0 +1,16 @@
+triplet example (1st order - no transition order problems!?).
+
+
+Gauss-Legendre (2x2, IGLOO):
+
+
+Points		Err		CPU		Evals
+20x20		6.1E6		2		784
+50x50		2.2E5		14		4964
+
+Linear interpolation (fm=0.05, IGLOO):
+
+Points		Err		CPU		Evals
+20x20		5.5E6		1		452
+50x50		6.3E5		7		2514
+100x100		1.6E5		31		10212

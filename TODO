@@ -1,0 +1,72 @@
+Here are some development ideas / open problems.
+
+The whole code needs to be checked. Especially the simulation part.
+
+Put in OpenMP stuff. Now one can try -qsmp=auto ...
+
+XFORMS: cascade menus, matrix data types, scrolling regions.
+
+- Amplitude scaling (real peaks vs. FFT) - this may be almost ok?
+- Remember to add appropriate references in the comments of each routine.
+- Clean up the code in libepr and validate each routine for correct
+  behaviour.
+- Check for obsolete routines in libepr.
+- Most of the libepr routines don't respect the xunits. Check this out.
+- Update and write documents. Write man pages.
+  Write some examples of applications and how to solve problems.
+- Enhance basis set used in numerical Hamiltonian (rotation, etc)
+
+- Long term: switch to ROOT and c++. Also use comedi and linux-gpib
+  for interfacing.
+
+Other stuff: do egrep -i '(todo|fixme)' */*.c
+
+- b3st file support
+- Inter exchange
+- implement a simulation method between 1st order and numerical SH
+  which is faster, esp. for powder simulations
+- profile code (esp. num. sh. endor simulation is slow?)
+- implement timed measurement mode (ie. measure 500 spectra on subsequent
+  pages. there is a given delay between measurements)
+- switch to and comedi 0.5 (when das1600 support gets in..)
+- M-L & auto amplitude does not work ?
+- simulate more interesting (high spin) examples from Weltner's book
+  (esp. exchange coupled Mn_2 looks cool)
+- add higher order field terms
+- use gnu autoconf
+- simulated spectrum does not have well define parameters when saved
+- a bug in kinetic mode (second measurement works?)
+- the spectrum is not always displayed on screen during measurement
+- start documenting the algorithms used in libepr and the usage of library
+  functions.
+- gas phase stuff: rotational angular momentum
+- CPU time tests for numer. spin hamiltonian
+- L.I terms?
+- when starting measurement the display is sometimes not updated?
+- profile ENDOR simulation - it appears to be very slow... and even
+  incorrect?
+- spline interpolation in energy levels
+- arpack & iterative methods: previous round as initial guess.
+- comedi: add sp_measure_read(), ..._write() which initialize(read) spectrum.
+  params (& writes)
+- save new numerical parameters
+- take full advantage of restarting (Arnoldi) + debug arnoldi solver
+  (remember: ARPACK patches!)
+- powder.c: check normalization constants!
+- make spline stuff more effective: use prev. calc. points!
+- br graph with B.L, S.L etc. produces wrong output when eigen following
+  is on ?
+- if gpib.conf is incorrect then xemr core dumps
+- complete comedi & create hardware menu (ie. one binary for all systems,
+  every hw combination can be used!)
+- some of the numerical params page values do not get set when
+  sps file is loaded. Things work ok after numerical params page is
+  visited.
+- in spline routines x and y arrays must be in small -> large
+  order! Otherwise it will fail!!!! (2d spline)
+- enhance angular momentum calculator (parser). Embed to xemr + allow general spin hamiltonian
+- try out lapack 3.0
+- switch to GAMMA library
+- finish realtime measurement interface
+- bug in save/load sps: active levels gets set sometimes
+

@@ -1,0 +1,25 @@
+2
+1.0
+1.0
+#
+# Evaluate eigen vectors and values of LS for two spin system
+# including orbital angular momentum (P)
+#
+# Clear Hamiltonian
+zero
+
+# Lx . Sx(1)
+-.333 x 1 x 2
+# Ly . Sy(1)
+-.333 y 1 y 2
+# Lz . Sz(1)
+-.333 z 1 z 2
+
+# Crystal field
+#0 z 2 z 2
+
+# Print Hamiltonian
+print
+# Diagonalize
+diag
+exit

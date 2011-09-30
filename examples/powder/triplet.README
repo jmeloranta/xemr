@@ -1,0 +1,12 @@
+
+Simple demonstration of powder lineshape for S = 1 with E = 0 and 
+D != 0. This is similar spectrum as is shown in Electron Paramagnetic
+Resonance: Elementary Theory and Practical Applications, p. 167
+(J. A. Weil, J. R. Bolton and J. E. Wertz).
+
+The calculated result is shown in xmgr file triplet.xmgr. Note that this
+was calculated using cylinderical symmetry of the system (E = 0) and
+therefore phi steps was set to 2 and theta to 400 in Simulate ->
+internal parameters. These parameters are not saved in .sps files.
+Here D = 100 G which should result in 150 G separation of the first
+and third absorptions.

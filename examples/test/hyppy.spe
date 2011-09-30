@@ -1,0 +1,29 @@
+helo
+name hydroqsuu250
+oper jussi
+date 19:05:45
+vers 0
+spty 0
+saty 0
+phas 0
+temp 0.000000e+00
+scan 1
+gain 0.000000e+00
+timc 0.000000e+00
+ctim 0.000000e+00
+modu 0.000000e+00
+modf 0.000000e+00
+mwfq 9.410000e+09
+mwpw 0.000000e+00
+endb 0.000000e+00
+endm 0.000000e+00
+trif 0.000000e+00
+endp 0.000000e+00
+trip 0.000000e+00
+info deuterhq+ d2so4
+xbeg 3.344750e+03
+xend 3.364750e+03
+xuni 0
+othe 0.000000e+00
+ophi 0.000000e+00
+spha 0.000000e+00

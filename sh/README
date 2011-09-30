@@ -1,0 +1,29 @@
+
+a simple demonstration of angular momentum matrix processing.
+
+First enter the number of spins and their L's.
+The basis will be a product of mL states.
+
+
+Then the following commands are available:
+
+zero  = Zero spin Hamiltonian
+print = Print spin Hamiltonian
+diag  = Diagonalize spin Hamiltonian
+expec = Calculate expectation value using current eigen vectors
+int   = Calculate intensity matrix between states
+add   = Add to given matrix element (for example to set first diagonal
+        element to 1 use: add 0 0 1 0, where the first numbers give
+        element indices and second and third real and imaginary parts)
+exit  = Exit
+
+Operators:
+
+<multiplier> {x,y,z,+,-} <spin#> ({x,y,z} <spin#> ...)
+
+For example:
+
+1 z 1   (= 1.0 * Sz on spin #1)
+1 z 1 y 2 (= 1.0 * (Sz on spin #1 + Sy on spin #2))
+
++ and - are rising / lowering operators.

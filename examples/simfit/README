@@ -1,0 +1,23 @@
+
+This directory contains a demonstration of simulation/fitting procedure
+(Lorentzian line with a constant linewidth) as applied for hydroquinone cation
+radical (cis & trans). The hydroqsuu150.sp? contains the experimental spectrum 
+and the corresponding *.sps file the optimized simulation parameters. The
+following restrictions were issued during the optimization:
+
+lw(1) = lw(2)
+hfc(1,1) = hfc(2,1)
+pos(1) = pos(2)
+amp(1) = amp(2)
++ other isotropic restrictions
+
+The obtained simulation (overlaid with the experimental spectrum) is shown
+in simfit.xmgr file.
+
+
+(J. Eloranta et al., Magn. Reson. Chem. 36, 98 (1998))
+
+Hydroqsuu250-hj.sps is the same with exception of Hooke-Jeeves optimization
+method being employed.
+
+

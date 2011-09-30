@@ -1,0 +1,35 @@
+4
+0.5
+0.5
+1.0
+1.0
+#
+# Evaluate eigen vectors and values of LS for two spin system
+# including two orbital angular momenta (P)
+#
+# Clear Hamiltonian
+zero
+
+# Lx . Sx
+1 x 3 x 1
+1 x 3 x 2
+1 x 4 x 1
+1 x 4 x 2
+
+# Ly . Sy
+1 y 3 y 1
+1 y 3 y 2
+1 y 4 y 1
+1 y 4 y 2
+
+# Lz . Sz
+1 z 3 z 1
+1 z 3 z 2
+1 z 4 z 1
+1 z 4 z 2
+
+# Print Hamiltonian
+print
+# Diagonalize
+diag
+exit

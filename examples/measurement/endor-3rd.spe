@@ -1,0 +1,27 @@
+helo
+date Thu Oct  1 11:30:08 1998
+
+vers 0
+spty 1
+saty 0
+phas 0
+temp 0.000000e+00
+scan 20
+gain 0.000000e+00
+timc 0.000000e+00
+ctim 0.000000e+00
+modu 5.000000e-02
+modf 1.000000e+02
+mwfq 9.420000e+09
+mwpw 0.000000e+00
+endb 3.302253e+03
+endm 5.000000e+01
+trif 1.000000e+01
+endp 7.000000e+00
+trip 9.900000e+01
+xbeg 1.000000e+01
+xend 1.800000e+01
+xuni 2
+othe 0.000000e+00
+ophi 0.000000e+00
+spha 1.000000e+00

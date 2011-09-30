@@ -1,0 +1,32 @@
+2
+0.5
+0.5
+#
+# Evaluate eigen vectors and values of L2 for two spin system
+#
+# Clear Hamiltonian
+zero
+
+# (S1x + S2x)^2
+1 x 1 x 1
+1 x 1 x 2
+1 x 2 x 1
+1 x 2 x 2
+
+# (S1y + S2y)^2
+1 y 1 y 1
+1 y 1 y 2
+1 y 2 y 1
+1 y 2 y 2
+
+# (S1z + S2z)^2
+1 z 1 z 1
+1 z 1 z 2
+1 z 2 z 1
+1 z 2 z 2
+
+# Print Hamiltonian
+print
+# Diagonalize
+diag
+exit

@@ -1,0 +1,26 @@
+helo
+date Fri Sep 18 15:54:39 2009
+reso 1
+harm 1
+spty 0
+saty 0
+temp 0.000000e+00
+scan 1
+gain 1.000000e+04
+timc 3.000000e-01
+ctim 4.100000e-02
+modu 5.000000e-01
+modf 1.000000e+02
+mwfq 9.518814e+09
+mwpw 0.000000e+00
+endb 3.330000e+03
+endm 4.000000e+01
+trif 1.000000e+01
+endp 1.000000e+01
+trip 9.900000e+01
+xbeg 3.373000e+03
+xend 3.403000e+03
+xuni 0
+othe 0.000000e+00
+ophi 0.000000e+00
+spha 0.000000e+00

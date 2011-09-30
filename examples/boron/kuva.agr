@@ -1,0 +1,1917 @@
+# ACE/gr parameter file
+#
+@version 40102
+@page layout free
+@ps linewidth begin 1
+@ps linewidth increment 2
+@hardcopy device 1
+@page 5
+@page inout 5
+@link page off
+@default linestyle 1
+@default linewidth 1
+@default color 1
+@default char size 1.000000
+@default font 4
+@default font source 0
+@default symbol size 1.000000
+@timestamp off
+@timestamp 0.03, 0.03
+@timestamp linewidth 1
+@timestamp color 1
+@timestamp rot 0
+@timestamp font 4
+@timestamp char size 1.000000
+@timestamp def "Mon Oct 11 17:07:26 1999"
+@with line
+@    line on
+@    line loctype view
+@    line 0.215659340659, 0.471169686985, 0.215659340659, 0.322899505766
+@    line linewidth 1
+@    line linestyle 1
+@    line color 1
+@    line arrow 1
+@    line arrow size 1.000000
+@    line arrow type 0
+@line def
+@with line
+@    line on
+@    line loctype view
+@    line 0.375, 0.474464579901, 0.375, 0.324546952224
+@    line linewidth 1
+@    line linestyle 1
+@    line color 1
+@    line arrow 1
+@    line arrow size 1.000000
+@    line arrow type 0
+@line def
+@with line
+@    line on
+@    line loctype view
+@    line 0.527472527473, 0.482701812191, 0.527472527473, 0.31960461285
+@    line linewidth 1
+@    line linestyle 1
+@    line color 1
+@    line arrow 1
+@    line arrow size 1.000000
+@    line arrow type 0
+@line def
+@with line
+@    line on
+@    line loctype view
+@    line 0.317307692308, 0.604612850082, 0.317307692308, 0.734761120264
+@    line linewidth 1
+@    line linestyle 1
+@    line color 1
+@    line arrow 1
+@    line arrow size 1.000000
+@    line arrow type 0
+@line def
+@with line
+@    line on
+@    line loctype view
+@    line 0.401098901099, 0.667215815486, 0.401098901099, 0.73805601318
+@    line linewidth 1
+@    line linestyle 1
+@    line color 1
+@    line arrow 1
+@    line arrow size 1.000000
+@    line arrow type 0
+@line def
+@with line
+@    line on
+@    line loctype view
+@    line 0.479395604396, 0.673805601318, 0.479395604396, 0.731466227348
+@    line linewidth 1
+@    line linestyle 1
+@    line color 1
+@    line arrow 1
+@    line arrow size 1.000000
+@    line arrow type 0
+@line def
+@with line
+@    line on
+@    line loctype view
+@    line 0.561813186813, 0.604612850082, 0.561813186813, 0.744645799012
+@    line linewidth 1
+@    line linestyle 1
+@    line color 1
+@    line arrow 1
+@    line arrow size 1.000000
+@    line arrow type 0
+@line def
+@with line
+@    line on
+@    line loctype view
+@    line 0.215659340659, 0.322899505766, 0.527472527473, 0.322899505766
+@    line linewidth 1
+@    line linestyle 1
+@    line color 1
+@    line arrow 0
+@    line arrow size 1.000000
+@    line arrow type 0
+@line def
+@with line
+@    line on
+@    line loctype view
+@    line 0.528846153846, 0.321252059308, 0.681318681319, 0.321252059308
+@    line linewidth 1
+@    line linestyle 1
+@    line color 1
+@    line arrow 0
+@    line arrow size 1.000000
+@    line arrow type 0
+@line def
+@with line
+@    line on
+@    line loctype view
+@    line 0.679945054945, 0.418451400329, 0.679945054945, 0.31960461285
+@    line linewidth 1
+@    line linestyle 1
+@    line color 1
+@    line arrow 1
+@    line arrow size 1.000000
+@    line arrow type 0
+@line def
+@with line
+@    line on
+@    line loctype view
+@    line 0.215659340659, 0.293245469522, 0.372252747253, 0.293245469522
+@    line linewidth 1
+@    line linestyle 1
+@    line color 1
+@    line arrow 3
+@    line arrow size 1.000000
+@    line arrow type 0
+@line def
+@with string
+@    string on
+@    string loctype view
+@    string 0.315934065934, 0.779242174629
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "Metyyliradikaali"
+@with string
+@    string on
+@    string loctype view
+@    string 0.462912087912, 0.2784184514
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "g"
+@with string
+@    string on
+@    string loctype view
+@    string 0.482142857143, 0.257001647446
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "zz"
+@with string
+@    string on
+@    string loctype view
+@    string 0.752747252747, 0.235584843493
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "g"
+@with string
+@    string on
+@    string loctype view
+@    string 0.774725274725, 0.215815485997
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "xx"
+@with string
+@    string on
+@    string loctype view
+@    string 0.807692307692, 0.233937397035
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "=g"
+@with string
+@    string on
+@    string loctype view
+@    string 0.848901098901, 0.212520593081
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "yy"
+@with string
+@    string on
+@    string loctype view
+@    string 0.228021978022, 0.257001647446
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "A"
+@with string
+@    string on
+@    string loctype view
+@    string 0.248626373626, 0.243822075783
+@    string linewidth 1
+@    string color 1
+@    string rot 0
+@    string font 4
+@    string just 0
+@    string char size 1.000000
+@    string def "zz"
+@with g0
+@g0 on
+@g0 label off
+@g0 hidden false
+@g0 type xy
+@g0 autoscale type AUTO
+@g0 fixedpoint off
+@g0 fixedpoint type 0
+@g0 fixedpoint xy 0.000000, 0.000000
+@g0 fixedpoint format general general
+@g0 fixedpoint prec 6, 6
+@    world xmin 3300
+@    world xmax 3500
+@    world ymin -8000
+@    world ymax 8500
+@    stack world 0, 0, 0, 0 tick 0, 0, 0, 0
+@    view xmin 0.150000
+@    view xmax 0.850000
+@    view ymin 0.150000
+@    view ymax 0.850000
+@    title "Laser ablaatiolla tuotettu boori atom Ar matriisissa"
+@    title font 4
+@    title size 1.500000
+@    title color 1
+@    title linewidth 1
+@    subtitle "Isotooppi 11"
+@    subtitle font 4
+@    subtitle size 1.000000
+@    subtitle color 1
+@    subtitle linewidth 1
+@    s0 symbol 0
+@    s0 symbol size 1.000000
+@    s0 symbol fill 0
+@    s0 symbol color -1
+@    s0 symbol linewidth 1
+@    s0 symbol linestyle 1
+@    s0 symbol center false
+@    s0 symbol char 0
+@    s0 skip 0
+@    s0 linestyle 1
+@    s0 linewidth 1
+@    s0 color 1
+@    s0 fill 0
+@    s0 fill with color
+@    s0 fill color 1
+@    s0 fill pattern 0
+@    s0 errorbar type BOTH
+@    s0 errorbar length 1.000000
+@    s0 errorbar linewidth 1
+@    s0 errorbar linestyle 1
+@    s0 errorbar riser on
+@    s0 errorbar riser linewidth 1
+@    s0 errorbar riser linestyle 1
+@    s0 xyz 0.000000, 0.000000
+@    s0 comment "/tmp/101.0"
+@    xaxis  tick on
+@    xaxis  tick major 50
+@    xaxis  tick minor 10
+@    xaxis  tick offsetx 0.000000
+@    xaxis  tick offsety 0.000000
+@    xaxis  label "Magnetic field / Gauss"
+@    xaxis  label layout para
+@    xaxis  label place auto
+@    xaxis  label char size 1.000000
+@    xaxis  label font 4
+@    xaxis  label color 1
+@    xaxis  label linewidth 1
+@    xaxis  ticklabel on
+@    xaxis  ticklabel type auto
+@    xaxis  ticklabel prec 5
+@    xaxis  ticklabel format general
+@    xaxis  ticklabel append ""
+@    xaxis  ticklabel prepend ""
+@    xaxis  ticklabel layout horizontal
+@    xaxis  ticklabel place on ticks
+@    xaxis  ticklabel skip 0
+@    xaxis  ticklabel stagger 0
+@    xaxis  ticklabel op bottom
+@    xaxis  ticklabel sign normal
+@    xaxis  ticklabel start type auto
+@    xaxis  ticklabel start 0.000000
+@    xaxis  ticklabel stop type auto
+@    xaxis  ticklabel stop 0.000000
+@    xaxis  ticklabel char size 1.000000
+@    xaxis  ticklabel font 4
+@    xaxis  ticklabel color 1
+@    xaxis  ticklabel linewidth 1
+@    xaxis  tick major on
+@    xaxis  tick minor on
+@    xaxis  tick default 6
+@    xaxis  tick in
+@    xaxis  tick major color 1
+@    xaxis  tick major linewidth 1
+@    xaxis  tick major linestyle 1
+@    xaxis  tick minor color 1
+@    xaxis  tick minor linewidth 1
+@    xaxis  tick minor linestyle 1
+@    xaxis  tick log off
+@    xaxis  tick size 1.000000
+@    xaxis  tick minor size 0.500000
+@    xaxis  bar off
+@    xaxis  bar color 1
+@    xaxis  bar linestyle 1
+@    xaxis  bar linewidth 1
+@    xaxis  tick major grid off
+@    xaxis  tick minor grid off
+@    xaxis  tick op both
+@    xaxis  tick type auto
+@    xaxis  tick spec 0
+@    yaxis  tick on
+@    yaxis  tick major 5000
+@    yaxis  tick minor 2500
+@    yaxis  tick offsetx 0.000000
+@    yaxis  tick offsety 0.000000
+@    yaxis  label ""
+@    yaxis  label layout para
+@    yaxis  label place auto
+@    yaxis  label char size 1.000000
+@    yaxis  label font 4
+@    yaxis  label color 1
+@    yaxis  label linewidth 1
+@    yaxis  ticklabel off
+@    yaxis  ticklabel type auto
+@    yaxis  ticklabel prec 5
+@    yaxis  ticklabel format general
+@    yaxis  ticklabel append ""
+@    yaxis  ticklabel prepend ""
+@    yaxis  ticklabel layout horizontal
+@    yaxis  ticklabel place on ticks
+@    yaxis  ticklabel skip 0
+@    yaxis  ticklabel stagger 0
+@    yaxis  ticklabel op left
+@    yaxis  ticklabel sign normal
+@    yaxis  ticklabel start type auto
+@    yaxis  ticklabel start 0.000000
+@    yaxis  ticklabel stop type auto
+@    yaxis  ticklabel stop 0.000000
+@    yaxis  ticklabel char size 1.000000
+@    yaxis  ticklabel font 4
+@    yaxis  ticklabel color 1
+@    yaxis  ticklabel linewidth 1
+@    yaxis  tick major on
+@    yaxis  tick minor on
+@    yaxis  tick default 6
+@    yaxis  tick in
+@    yaxis  tick major color 1
+@    yaxis  tick major linewidth 1
+@    yaxis  tick major linestyle 1
+@    yaxis  tick minor color 1
+@    yaxis  tick minor linewidth 1
+@    yaxis  tick minor linestyle 1
+@    yaxis  tick log off
+@    yaxis  tick size 1.000000
+@    yaxis  tick minor size 0.500000
+@    yaxis  bar off
+@    yaxis  bar color 1
+@    yaxis  bar linestyle 1
+@    yaxis  bar linewidth 1
+@    yaxis  tick major grid off
+@    yaxis  tick minor grid off
+@    yaxis  tick op both
+@    yaxis  tick type auto
+@    yaxis  tick spec 0
+@    zeroxaxis  tick on
+@    zeroxaxis  tick major 100
+@    zeroxaxis  tick minor 50
+@    zeroxaxis  tick offsetx 0.000000
+@    zeroxaxis  tick offsety 0.000000
+@    zeroxaxis  label ""
+@    zeroxaxis  label layout para
+@    zeroxaxis  label place auto
+@    zeroxaxis  label char size 1.000000
+@    zeroxaxis  label font 4
+@    zeroxaxis  label color 1
+@    zeroxaxis  label linewidth 1
+@    zeroxaxis  ticklabel off
+@    zeroxaxis  ticklabel type auto
+@    zeroxaxis  ticklabel prec 5
+@    zeroxaxis  ticklabel format general
+@    zeroxaxis  ticklabel append ""
+@    zeroxaxis  ticklabel prepend ""
+@    zeroxaxis  ticklabel layout horizontal
+@    zeroxaxis  ticklabel place on ticks
+@    zeroxaxis  ticklabel skip 0
+@    zeroxaxis  ticklabel stagger 0
+@    zeroxaxis  ticklabel op bottom
+@    zeroxaxis  ticklabel sign normal
+@    zeroxaxis  ticklabel start type auto
+@    zeroxaxis  ticklabel start 0.000000
+@    zeroxaxis  ticklabel stop type auto
+@    zeroxaxis  ticklabel stop 0.000000
+@    zeroxaxis  ticklabel char size 1.000000
+@    zeroxaxis  ticklabel font 4
+@    zeroxaxis  ticklabel color 1
+@    zeroxaxis  ticklabel linewidth 1
+@    zeroxaxis  tick major off
+@    zeroxaxis  tick minor on
+@    zeroxaxis  tick default 6
+@    zeroxaxis  tick in
+@    zeroxaxis  tick major color 1
+@    zeroxaxis  tick major linewidth 1
+@    zeroxaxis  tick major linestyle 1
+@    zeroxaxis  tick minor color 1
+@    zeroxaxis  tick minor linewidth 1
+@    zeroxaxis  tick minor linestyle 1
+@    zeroxaxis  tick log off
+@    zeroxaxis  tick size 1.000000
+@    zeroxaxis  tick minor size 0.500000
+@    zeroxaxis  bar off
+@    zeroxaxis  bar color 1
+@    zeroxaxis  bar linestyle 1
+@    zeroxaxis  bar linewidth 1
+@    zeroxaxis  tick major grid off
+@    zeroxaxis  tick minor grid off
+@    zeroxaxis  tick op both
+@    zeroxaxis  tick type auto
+@    zeroxaxis  tick spec 0
+@    zeroyaxis  tick on
+@    zeroyaxis  tick major 5000
+@    zeroyaxis  tick minor 2500
+@    zeroyaxis  tick offsetx 0.000000
+@    zeroyaxis  tick offsety 0.000000
+@    zeroyaxis  label ""
+@    zeroyaxis  label layout para
+@    zeroyaxis  label place auto
+@    zeroyaxis  label char size 1.000000
+@    zeroyaxis  label font 4
+@    zeroyaxis  label color 1
+@    zeroyaxis  label linewidth 1
+@    zeroyaxis  ticklabel off
+@    zeroyaxis  ticklabel type auto
+@    zeroyaxis  ticklabel prec 5
+@    zeroyaxis  ticklabel format general
+@    zeroyaxis  ticklabel append ""
+@    zeroyaxis  ticklabel prepend ""
+@    zeroyaxis  ticklabel layout horizontal
+@    zeroyaxis  ticklabel place on ticks
+@    zeroyaxis  ticklabel skip 0
+@    zeroyaxis  ticklabel stagger 0
+@    zeroyaxis  ticklabel op left
+@    zeroyaxis  ticklabel sign normal
+@    zeroyaxis  ticklabel start type auto
+@    zeroyaxis  ticklabel start 0.000000
+@    zeroyaxis  ticklabel stop type auto
+@    zeroyaxis  ticklabel stop 0.000000
+@    zeroyaxis  ticklabel char size 1.000000
+@    zeroyaxis  ticklabel font 4
+@    zeroyaxis  ticklabel color 1
+@    zeroyaxis  ticklabel linewidth 1
+@    zeroyaxis  tick major off
+@    zeroyaxis  tick minor on
+@    zeroyaxis  tick default 6
+@    zeroyaxis  tick in
+@    zeroyaxis  tick major color 1
+@    zeroyaxis  tick major linewidth 1
+@    zeroyaxis  tick major linestyle 1
+@    zeroyaxis  tick minor color 1
+@    zeroyaxis  tick minor linewidth 1
+@    zeroyaxis  tick minor linestyle 1
+@    zeroyaxis  tick log off
+@    zeroyaxis  tick size 1.000000
+@    zeroyaxis  tick minor size 0.500000
+@    zeroyaxis  bar off
+@    zeroyaxis  bar color 1
+@    zeroyaxis  bar linestyle 1
+@    zeroyaxis  bar linewidth 1
+@    zeroyaxis  tick major grid off
+@    zeroyaxis  tick minor grid off
+@    zeroyaxis  tick op both
+@    zeroyaxis  tick type auto
+@    zeroyaxis  tick spec 0
+@    legend off
+@    legend loctype view
+@    legend layout 0
+@    legend vgap 2
+@    legend hgap 1
+@    legend length 4
+@    legend box off
+@    legend box fill off
+@    legend box fill with color
+@    legend box fill color 0
+@    legend box fill pattern 1
+@    legend box color 1
+@    legend box linewidth 1
+@    legend box linestyle 1
+@    legend x1 0.8
+@    legend y1 0.8
+@    legend font 4
+@    legend char size 1.000000
+@    legend linestyle 1
+@    legend linewidth 1
+@    legend color 1
+@    frame on
+@    frame type 0
+@    frame linestyle 1
+@    frame linewidth 1
+@    frame color 1
+@    frame fill off
+@    frame background color 0
+@WITH G0
+@G0 ON
+@TARGET S0
+@TYPE xy
+         3287.75               57
+         3287.93               54
+         3288.12               21
+          3288.3              -48
+         3288.48               27
+         3288.67              -15
+         3288.85               44
+         3289.04               54
+         3289.22               75
+          3289.4              -11
+         3289.59               30
+         3289.77               28
+         3289.95               23
+         3290.14                4
+         3290.32               -7
+         3290.51              -70
+         3290.69              -14
+         3290.87                9
+         3291.06              -88
+         3291.24              -94
+         3291.42             -100
+         3291.61              -93
+         3291.79              -73
+         3291.98              -43
+         3292.16             -102
+         3292.34             -108
+         3292.53              -36
+         3292.71               27
+         3292.89              -10
+         3293.08              -39
+         3293.26              -81
+         3293.45              -45
+         3293.63               49
+         3293.81              119
+            3294              171
+         3294.18              112
+         3294.36              -22
+         3294.55              -33
+         3294.73              -13
+         3294.92              -35
+          3295.1               -7
+         3295.28               10
+         3295.47              -55
+         3295.65               18
+         3295.83               77
+         3296.02               71
+          3296.2              117
+         3296.39              138
+         3296.57               90
+         3296.75               70
+         3296.94              119
+         3297.12               35
+         3297.31               80
+         3297.49               30
+         3297.67              -89
+         3297.86             -120
+         3298.04              -41
+         3298.22              -14
+         3298.41               -4
+         3298.59                3
+         3298.78              -66
+         3298.96             -100
+         3299.14              -53
+         3299.33              -26
+         3299.51              -37
+         3299.69              -17
+         3299.88              -98
+         3300.06              -76
+         3300.25              -15
+         3300.43               65
+         3300.61              126
+          3300.8              133
+         3300.98               92
+         3301.16               65
+         3301.35              121
+         3301.53              150
+         3301.72              215
+          3301.9              202
+         3302.08              112
+         3302.27               38
+         3302.45               46
+         3302.63               47
+         3302.82               81
+            3303               74
+         3303.19              100
+         3303.37               55
+         3303.55               81
+         3303.74               82
+         3303.92              -14
+          3304.1               17
+         3304.29              -17
+         3304.47              -86
+         3304.66              -93
+         3304.84               33
+         3305.02              144
+         3305.21              136
+         3305.39               82
+         3305.57               32
+         3305.76               36
+         3305.94               18
+         3306.13              -16
+         3306.31               -3
+         3306.49              -13
+         3306.68              -92
+         3306.86              -48
+         3307.04               14
+         3307.23              -46
+         3307.41              -71
+          3307.6              -22
+         3307.78              -36
+         3307.96                0
+         3308.15              108
+         3308.33              170
+         3308.51              206
+          3308.7              232
+         3308.88              171
+         3309.07              243
+         3309.25              337
+         3309.43              350
+         3309.62              405
+          3309.8              353
+         3309.99              298
+         3310.17              368
+         3310.35              413
+         3310.54              474
+         3310.72              535
+          3310.9              532
+         3311.09              401
+         3311.27              341
+         3311.46              273
+         3311.64              269
+         3311.82              299
+         3312.01              306
+         3312.19              205
+         3312.37              111
+         3312.56               76
+         3312.74               13
+         3312.93             -105
+         3313.11             -165
+         3313.29             -156
+         3313.48             -213
+         3313.66             -159
+         3313.84             -102
+         3314.03             -105
+         3314.21             -102
+          3314.4             -160
+         3314.58             -163
+         3314.76             -136
+         3314.95             -107
+         3315.13              -32
+         3315.31               96
+          3315.5              181
+         3315.68              448
+         3315.87              608
+         3316.05              834
+         3316.23             1029
+         3316.42             1264
+          3316.6             1620
+         3316.78             1713
+         3316.97             1778
+         3317.15             2019
+         3317.34             2101
+         3317.52             2166
+          3317.7             2332
+         3317.89             2316
+         3318.07             2364
+         3318.25             2437
+         3318.44             2470
+         3318.62             2455
+         3318.81             2380
+         3318.99             2248
+         3319.17             2133
+         3319.36             2021
+         3319.54             1892
+         3319.72             1775
+         3319.91             1720
+         3320.09             1475
+         3320.28             1343
+         3320.46             1331
+         3320.64             1199
+         3320.83             1199
+         3321.01             1117
+          3321.2             1016
+         3321.38              879
+         3321.56              833
+         3321.75              801
+         3321.93              822
+         3322.11              850
+          3322.3              758
+         3322.48              631
+         3322.67              640
+         3322.85              628
+         3323.03              645
+         3323.22              608
+          3323.4              554
+         3323.58              452
+         3323.77              407
+         3323.95              431
+         3324.14              464
+         3324.32              465
+          3324.5              426
+         3324.69              325
+         3324.87              357
+         3325.05              445
+         3325.24              474
+         3325.42              469
+         3325.61              404
+         3325.79              434
+         3325.97              419
+         3326.16              465
+         3326.34              417
+         3326.52              470
+         3326.71              492
+         3326.89              403
+         3327.08              338
+         3327.26              429
+         3327.44              525
+         3327.63              575
+         3327.81              515
+         3327.99              446
+         3328.18              432
+         3328.36              483
+         3328.55              516
+         3328.73              580
+         3328.91              592
+          3329.1              508
+         3329.28              447
+         3329.46              541
+         3329.65              514
+         3329.83              565
+         3330.02              652
+          3330.2              529
+         3330.38              492
+         3330.57              546
+         3330.75              500
+         3330.93              461
+         3331.12              418
+          3331.3              344
+         3331.49              407
+         3331.67              473
+         3331.85              477
+         3332.04              456
+         3332.22              512
+         3332.41              451
+         3332.59              334
+         3332.77              296
+         3332.96              309
+         3333.14              366
+         3333.32              351
+         3333.51              302
+         3333.69              305
+         3333.88              398
+         3334.06              453
+         3334.24              516
+         3334.43              594
+         3334.61              578
+         3334.79              478
+         3334.98              444
+         3335.16              376
+         3335.35              303
+         3335.53              306
+         3335.71              246
+          3335.9              179
+         3336.08              166
+         3336.26              211
+         3336.45              208
+         3336.63              264
+         3336.82              239
+            3337              200
+         3337.18              162
+         3337.37              203
+         3337.55              165
+         3337.73              123
+         3337.92               82
+          3338.1               85
+         3338.29              138
+         3338.47              283
+         3338.65              376
+         3338.84              485
+         3339.02              552
+          3339.2              552
+         3339.39              575
+         3339.57              716
+         3339.76              734
+         3339.94              726
+         3340.12              744
+         3340.31              702
+         3340.49              639
+         3340.67              641
+         3340.86              665
+         3341.04              720
+         3341.23              748
+         3341.41              681
+         3341.59              632
+         3341.78              722
+         3341.96              759
+         3342.14              804
+         3342.33              722
+         3342.51              731
+          3342.7              725
+         3342.88              744
+         3343.06              718
+         3343.25              672
+         3343.43              604
+         3343.61              490
+          3343.8              376
+         3343.98              333
+         3344.17              297
+         3344.35              268
+         3344.53              208
+         3344.72               87
+          3344.9              -20
+         3345.09                4
+         3345.27               82
+         3345.45              196
+         3345.64              239
+         3345.82              241
+            3346              192
+         3346.19              275
+         3346.37              412
+         3346.56              623
+         3346.74              994
+         3346.92             1322
+         3347.11             1618
+         3347.29             1815
+         3347.47             2080
+         3347.66             2164
+         3347.84             2290
+         3348.03             2150
+         3348.21             1875
+         3348.39             1539
+         3348.58             1195
+         3348.76              825
+         3348.94              443
+         3349.13               17
+         3349.31             -366
+          3349.5             -534
+         3349.68             -645
+         3349.86             -537
+         3350.05             -491
+         3350.23             -452
+         3350.41             -328
+          3350.6             -254
+         3350.78             -146
+         3350.97              -91
+         3351.15              -76
+         3351.33               -1
+         3351.52               -9
+          3351.7               68
+         3351.88              173
+         3352.07              230
+         3352.25              267
+         3352.44              285
+         3352.62              306
+          3352.8              299
+         3352.99              284
+         3353.17              313
+         3353.35              311
+         3353.54              362
+         3353.72              428
+         3353.91              505
+         3354.09              576
+         3354.27              662
+         3354.46              725
+         3354.64              854
+         3354.82              887
+         3355.01              953
+         3355.19              962
+         3355.38              933
+         3355.56              968
+         3355.74             1072
+         3355.93             1138
+         3356.11             1075
+          3356.3             1119
+         3356.48             1097
+         3356.66             1116
+         3356.85             1128
+         3357.03              991
+         3357.21              947
+          3357.4             1011
+         3357.58             1085
+         3357.77             1101
+         3357.95             1126
+         3358.13             1105
+         3358.32             1078
+          3358.5             1101
+         3358.68             1116
+         3358.87             1087
+         3359.05             1110
+         3359.24             1105
+         3359.42             1114
+          3359.6             1013
+         3359.79              989
+         3359.97              907
+         3360.15              904
+         3360.34              955
+         3360.52             1007
+         3360.71             1084
+         3360.89             1231
+         3361.07             1506
+         3361.26             1824
+         3361.44             2123
+         3361.62             2448
+         3361.81             2696
+         3361.99             2939
+         3362.18             3079
+         3362.36             3260
+         3362.54             3649
+         3362.73             3837
+         3362.91             3821
+         3363.09             3817
+         3363.28             3844
+         3363.46             3843
+         3363.65             3867
+         3363.83             3791
+         3364.01             3716
+          3364.2             3570
+         3364.38             3412
+         3364.56             3236
+         3364.75             3089
+         3364.93             2877
+         3365.12             2708
+          3365.3             2656
+         3365.48             2494
+         3365.67             2346
+         3365.85             2290
+         3366.03             2108
+         3366.22             1954
+          3366.4             1867
+         3366.59             1818
+         3366.77             1857
+         3366.95             1899
+         3367.14             1919
+         3367.32             1994
+          3367.5             2102
+         3367.69             2265
+         3367.87             2436
+         3368.06             2597
+         3368.24             2536
+         3368.42             2409
+         3368.61             2315
+         3368.79             2273
+         3368.98             2145
+         3369.16             2005
+         3369.34             1868
+         3369.53             1834
+         3369.71             2079
+         3369.89             2415
+         3370.08             2836
+         3370.26             3174
+         3370.45             3506
+         3370.63             3775
+         3370.81             3763
+            3371             3731
+         3371.18             3342
+         3371.36             2879
+         3371.55             2072
+         3371.73             1290
+         3371.92              556
+          3372.1              -54
+         3372.28             -557
+         3372.47            -1010
+         3372.65            -1290
+         3372.83            -1472
+         3373.02            -1393
+          3373.2            -1237
+         3373.39            -1025
+         3373.57             -748
+         3373.75             -554
+         3373.94             -395
+         3374.12             -231
+          3374.3              -36
+         3374.49               82
+         3374.67              188
+         3374.86              179
+         3375.04              189
+         3375.22              163
+         3375.41               81
+         3375.59               68
+         3375.77               35
+         3375.96                8
+         3376.14               15
+         3376.33               12
+         3376.51               89
+         3376.69              112
+         3376.88               91
+         3377.06               94
+         3377.24              144
+         3377.43              176
+         3377.61              170
+          3377.8              287
+         3377.98              299
+         3378.16              260
+         3378.35              226
+         3378.53              200
+         3378.71              333
+          3378.9              370
+         3379.08              419
+         3379.27              501
+         3379.45              468
+         3379.63              408
+         3379.82              362
+            3380              381
+         3380.19              418
+         3380.37              475
+         3380.55              460
+         3380.74              372
+         3380.92              309
+          3381.1              251
+         3381.29              250
+         3381.47              281
+         3381.66              351
+         3381.84              265
+         3382.02              281
+         3382.21              384
+         3382.39              424
+         3382.57              419
+         3382.76              480
+         3382.94              452
+         3383.13              462
+         3383.31              489
+         3383.49              625
+         3383.68              686
+         3383.86              758
+         3384.04              762
+         3384.23              780
+         3384.41              800
+          3384.6              754
+         3384.78              810
+         3384.96              911
+         3385.15             1003
+         3385.33              930
+         3385.51              929
+          3385.7              890
+         3385.88              821
+         3386.07              876
+         3386.25              704
+         3386.43              594
+         3386.62              452
+          3386.8              333
+         3386.98              266
+         3387.17              274
+         3387.35              225
+         3387.54               61
+         3387.72               39
+          3387.9               66
+         3388.09              142
+         3388.27              152
+         3388.45              151
+         3388.64              111
+         3388.82              179
+         3389.01              223
+         3389.19              186
+         3389.37              262
+         3389.56              286
+         3389.74              299
+         3389.92              284
+         3390.11              284
+         3390.29              317
+         3390.48              287
+         3390.66              217
+         3390.84              224
+         3391.03              170
+         3391.21              207
+          3391.4              220
+         3391.58              249
+         3391.76              219
+         3391.95              103
+         3392.13               84
+         3392.31              201
+          3392.5              281
+         3392.68              470
+         3392.87              883
+         3393.05             1258
+         3393.23             1658
+         3393.42             2091
+          3393.6             2609
+         3393.78             3212
+         3393.97             3770
+         3394.15             4107
+         3394.34             4066
+         3394.52             3979
+          3394.7             3418
+         3394.89             2755
+         3395.07             2028
+         3395.25             1291
+         3395.44              479
+         3395.62              -70
+         3395.81             -495
+         3395.99             -861
+         3396.17            -1073
+         3396.36            -1267
+         3396.54            -1252
+         3396.72            -1172
+         3396.91            -1010
+         3397.09             -873
+         3397.28             -795
+         3397.46             -774
+         3397.64             -767
+         3397.83             -597
+         3398.01             -417
+         3398.19             -271
+         3398.38              -55
+         3398.56               98
+         3398.75              170
+         3398.93              307
+         3399.11              492
+          3399.3              701
+         3399.48              915
+         3399.66             1067
+         3399.85             1097
+         3400.03             1111
+         3400.22             1137
+          3400.4             1165
+         3400.58             1183
+         3400.77             1111
+         3400.95             1033
+         3401.13             1002
+         3401.32              953
+          3401.5              980
+         3401.69              947
+         3401.87              903
+         3402.05              785
+         3402.24              715
+         3402.42              745
+          3402.6              732
+         3402.79              791
+         3402.97              952
+         3403.16              898
+         3403.34              801
+         3403.52              767
+         3403.71              732
+         3403.89              789
+         3404.08              872
+         3404.26              856
+         3404.44              773
+         3404.63              890
+         3404.81              949
+         3404.99             1163
+         3405.18             1332
+         3405.36             1532
+         3405.55             1822
+         3405.73             2188
+         3405.91             2608
+          3406.1             3180
+         3406.28             3746
+         3406.46             4114
+         3406.65             4388
+         3406.83             4616
+         3407.02             4723
+          3407.2             4900
+         3407.38             5064
+         3407.57             5159
+         3407.75             5005
+         3407.93             4854
+         3408.12             4678
+          3408.3             4454
+         3408.49             4150
+         3408.67             3764
+         3408.85             3410
+         3409.04             3141
+         3409.22             2863
+          3409.4             2588
+         3409.59             2350
+         3409.77             2131
+         3409.96             1886
+         3410.14             1699
+         3410.32             1511
+         3410.51             1396
+         3410.69             1323
+         3410.87             1224
+         3411.06             1134
+         3411.24             1088
+         3411.43             1064
+         3411.61              978
+         3411.79              928
+         3411.98              909
+         3412.16              777
+         3412.34              778
+         3412.53              830
+         3412.71              905
+          3412.9              954
+         3413.08             1032
+         3413.26             1137
+         3413.45             1242
+         3413.63             1300
+         3413.81             1352
+            3414             1370
+         3414.18             1488
+         3414.37             1501
+         3414.55             1473
+         3414.73             1556
+         3414.92             1510
+          3415.1             1528
+         3415.29             1432
+         3415.47             1348
+         3415.65             1206
+         3415.84             1184
+         3416.02             1232
+          3416.2             1303
+         3416.39             1460
+         3416.57             1523
+         3416.76             1694
+         3416.94             1959
+         3417.12             2139
+         3417.31             2339
+         3417.49             2304
+         3417.67             2107
+         3417.86             1745
+         3418.04             1365
+         3418.23              976
+         3418.41              482
+         3418.59                8
+         3418.78             -425
+         3418.96             -655
+         3419.14             -815
+         3419.33             -783
+         3419.51             -734
+          3419.7             -616
+         3419.88             -601
+         3420.06             -451
+         3420.25             -357
+         3420.43             -309
+         3420.61             -322
+          3420.8             -274
+         3420.98             -273
+         3421.17             -307
+         3421.35             -269
+         3421.53             -242
+         3421.72             -305
+          3421.9             -393
+         3422.08             -567
+         3422.27             -700
+         3422.45             -757
+         3422.64             -771
+         3422.82             -819
+            3423             -868
+         3423.19            -1038
+         3423.37            -1162
+         3423.55            -1178
+         3423.74            -1232
+         3423.92            -1309
+         3424.11            -1343
+         3424.29            -1373
+         3424.47            -1439
+         3424.66            -1483
+         3424.84            -1539
+         3425.02            -1532
+         3425.21            -1584
+         3425.39            -1590
+         3425.58            -1594
+         3425.76            -1512
+         3425.94            -1393
+         3426.13            -1301
+         3426.31            -1362
+          3426.5            -1391
+         3426.68            -1385
+         3426.86            -1301
+         3427.05            -1225
+         3427.23            -1173
+         3427.41            -1090
+          3427.6            -1045
+         3427.78            -1059
+         3427.97            -1032
+         3428.15             -910
+         3428.33             -858
+         3428.52             -742
+          3428.7             -664
+         3428.88             -574
+         3429.07             -522
+         3429.25             -387
+         3429.44             -311
+         3429.62             -213
+          3429.8             -153
+         3429.99             -141
+         3430.17             -161
+         3430.35              -52
+         3430.54             -105
+         3430.72             -179
+         3430.91             -143
+         3431.09             -204
+         3431.27             -264
+         3431.46             -292
+         3431.64             -271
+         3431.82             -238
+         3432.01             -235
+         3432.19             -399
+         3432.38             -498
+         3432.56             -500
+         3432.74             -471
+         3432.93             -496
+         3433.11             -636
+         3433.29             -734
+         3433.48             -814
+         3433.66             -840
+         3433.85             -790
+         3434.03             -806
+         3434.21             -823
+          3434.4             -801
+         3434.58             -824
+         3434.76             -881
+         3434.95             -824
+         3435.13             -699
+         3435.32             -652
+          3435.5             -672
+         3435.68             -698
+         3435.87             -734
+         3436.05             -685
+         3436.23             -658
+         3436.42             -670
+          3436.6             -728
+         3436.79             -774
+         3436.97             -789
+         3437.15             -752
+         3437.34             -705
+         3437.52             -684
+          3437.7             -681
+         3437.89             -674
+         3438.07             -696
+         3438.26             -639
+         3438.44             -577
+         3438.62             -484
+         3438.81             -470
+         3438.99             -494
+         3439.18             -562
+         3439.36             -598
+         3439.54             -708
+         3439.73             -814
+         3439.91             -846
+         3440.09             -913
+         3440.28            -1030
+         3440.46            -1094
+         3440.65            -1155
+         3440.83            -1319
+         3441.01            -1420
+          3441.2            -1624
+         3441.38            -1800
+         3441.56            -1835
+         3441.75            -1866
+         3441.93            -1930
+         3442.12            -2031
+          3442.3            -2179
+         3442.48            -2291
+         3442.67            -2271
+         3442.85            -2225
+         3443.03            -2317
+         3443.22            -2344
+          3443.4            -2455
+         3443.59            -2582
+         3443.77            -2576
+         3443.95            -2576
+         3444.14            -2548
+         3444.32            -2474
+          3444.5            -2414
+         3444.69            -2413
+         3444.87            -2385
+         3445.06            -2251
+         3445.24            -2169
+         3445.42            -2123
+         3445.61            -2122
+         3445.79            -2054
+         3445.97            -1922
+         3446.16            -1753
+         3446.34            -1620
+         3446.53            -1486
+         3446.71            -1388
+         3446.89            -1286
+         3447.08            -1148
+         3447.26             -918
+         3447.44             -791
+         3447.63             -678
+         3447.81             -521
+            3448             -372
+         3448.18             -238
+         3448.36               10
+         3448.55              260
+         3448.73              486
+         3448.91              746
+          3449.1             1037
+         3449.28             1201
+         3449.47             1439
+         3449.65             1714
+         3449.83             2056
+         3450.02             2459
+          3450.2             2834
+         3450.39             3235
+         3450.57             3726
+         3450.75             4268
+         3450.94             5010
+         3451.12             5798
+          3451.3             6316
+         3451.49             6876
+         3451.67             7167
+         3451.86             7541
+         3452.04             7848
+         3452.22             8109
+         3452.41             8058
+         3452.59             7955
+         3452.77             7730
+         3452.96             7440
+         3453.14             6990
+         3453.33             6482
+         3453.51             5833
+         3453.69             5181
+         3453.88             4521
+         3454.06             3940
+         3454.24             3346
+         3454.43             2874
+         3454.61             2390
+          3454.8             1909
+         3454.98             1520
+         3455.16             1180
+         3455.35              818
+         3455.53              492
+         3455.71              160
+          3455.9             -131
+         3456.08             -346
+         3456.27             -435
+         3456.45             -584
+         3456.63             -776
+         3456.82             -962
+            3457            -1112
+         3457.18            -1271
+         3457.37            -1365
+         3457.55            -1431
+         3457.74            -1527
+         3457.92            -1567
+          3458.1            -1553
+         3458.29            -1643
+         3458.47            -1631
+         3458.65            -1552
+         3458.84            -1519
+         3459.02            -1531
+         3459.21            -1622
+         3459.39            -1692
+         3459.57            -1714
+         3459.76            -1807
+         3459.94            -1927
+         3460.12            -2017
+         3460.31            -2106
+         3460.49            -2206
+         3460.68            -2242
+         3460.86            -2289
+         3461.04            -2473
+         3461.23            -2797
+         3461.41            -3187
+          3461.6            -3505
+         3461.78            -3816
+         3461.96            -4118
+         3462.15            -4541
+         3462.33            -4923
+         3462.51            -5318
+          3462.7            -5595
+         3462.88            -5856
+         3463.07            -5953
+         3463.25            -6138
+         3463.43            -6389
+         3463.62            -6696
+          3463.8            -6822
+         3463.98            -6799
+         3464.17            -6856
+         3464.35            -7056
+         3464.54            -7227
+         3464.72            -7308
+          3464.9            -7255
+         3465.09            -7056
+         3465.27            -6851
+         3465.45            -6775
+         3465.64            -6691
+         3465.82            -6741
+         3466.01            -6704
+         3466.19            -6575
+         3466.37            -6432
+         3466.56            -6289
+         3466.74            -6174
+         3466.92            -6198
+         3467.11            -6075
+         3467.29            -5871
+         3467.48            -5675
+         3467.66            -5525
+         3467.84            -5424
+         3468.03            -5331
+         3468.21            -5238
+         3468.39            -5136
+         3468.58            -4956
+         3468.76            -4730
+         3468.95            -4700
+         3469.13            -4675
+         3469.31            -4613
+          3469.5            -4490
+         3469.68            -4313
+         3469.86            -4119
+         3470.05            -4027
+         3470.23            -3924
+         3470.42            -3888
+          3470.6            -3749
+         3470.78            -3572
+         3470.97            -3395
+         3471.15            -3295
+         3471.33            -3238
+         3471.52            -3186
+          3471.7            -3108
+         3471.89            -3078
+         3472.07            -3027
+         3472.25            -2947
+         3472.44            -2892
+         3472.62            -2832
+          3472.8            -2817
+         3472.99            -2814
+         3473.17            -2761
+         3473.36            -2669
+         3473.54            -2606
+         3473.72            -2524
+         3473.91            -2498
+         3474.09            -2439
+         3474.28            -2321
+         3474.46            -2288
+         3474.64            -2310
+         3474.83            -2376
+         3475.01            -2390
+         3475.19            -2339
+         3475.38            -2227
+         3475.56            -2202
+         3475.75            -2223
+         3475.93            -2241
+         3476.11            -2177
+          3476.3            -2122
+         3476.48            -1976
+         3476.66            -1893
+         3476.85            -1848
+         3477.03            -1858
+         3477.22            -1869
+          3477.4            -1773
+         3477.58            -1743
+         3477.77            -1677
+         3477.95            -1649
+         3478.13            -1659
+         3478.32            -1674
+          3478.5            -1667
+         3478.69            -1681
+         3478.87            -1663
+         3479.05            -1611
+         3479.24            -1593
+         3479.42            -1694
+          3479.6            -1778
+         3479.79            -1698
+         3479.97            -1577
+         3480.16            -1577
+         3480.34            -1619
+         3480.52            -1623
+         3480.71            -1574
+         3480.89            -1517
+         3481.07            -1437
+         3481.26            -1428
+         3481.44            -1410
+         3481.63            -1446
+         3481.81            -1532
+         3481.99            -1518
+         3482.18            -1490
+         3482.36            -1512
+         3482.54            -1531
+         3482.73            -1608
+         3482.91            -1608
+          3483.1            -1573
+         3483.28            -1477
+         3483.46            -1433
+         3483.65            -1399
+         3483.83            -1363
+         3484.01            -1455
+          3484.2            -1427
+         3484.38            -1376
+         3484.57            -1334
+         3484.75            -1388
+         3484.93            -1440
+         3485.12            -1449
+          3485.3            -1419
+         3485.49            -1336
+         3485.67            -1347
+         3485.85            -1311
+         3486.04            -1286
+         3486.22            -1400
+          3486.4            -1390
+         3486.59            -1328
+         3486.77            -1327
+         3486.96            -1290
+         3487.14            -1261
+         3487.32            -1246
+         3487.51            -1239
+         3487.69            -1134
+         3487.87            -1039
+         3488.06            -1023
+         3488.24            -1078
+         3488.43            -1066
+         3488.61            -1113
+         3488.79            -1069
+         3488.98            -1136
+         3489.16            -1055
+         3489.34            -1064
+         3489.53            -1112
+         3489.71            -1180
+          3489.9            -1095
+         3490.08            -1029
+         3490.26             -997
+         3490.45            -1009
+         3490.63            -1054
+         3490.81            -1102
+            3491            -1059
+         3491.18            -1015
+         3491.37             -990
+         3491.55            -1047
+         3491.73            -1002
+         3491.92             -998
+          3492.1             -972
+         3492.28             -927
+         3492.47             -971
+         3492.65             -930
+         3492.84             -984
+         3493.02             -983
+          3493.2             -953
+         3493.39             -933
+         3493.57             -900
+         3493.75             -844
+         3493.94             -879
+         3494.12             -910
+         3494.31             -843
+         3494.49             -727
+         3494.67             -713
+         3494.86             -702
+         3495.04             -699
+         3495.22             -744
+         3495.41             -662
+         3495.59             -637
+         3495.78             -624
+         3495.96             -635
+         3496.14             -676
+         3496.33             -709
+         3496.51             -735
+         3496.69             -648
+         3496.88             -648
+         3497.06             -661
+         3497.25             -713
+         3497.43             -799
+         3497.61             -892
+          3497.8             -908
+         3497.98             -893
+         3498.17             -859
+         3498.35             -821
+         3498.53             -757
+         3498.72             -665
+          3498.9             -600
+         3499.08             -603
+         3499.27             -603
+         3499.45             -589
+         3499.64             -693
+         3499.82             -749
+            3500             -742
+         3500.19             -808
+         3500.37             -810
+         3500.55             -836
+         3500.74             -908
+         3500.92             -913
+         3501.11             -858
+         3501.29             -799
+         3501.47             -812
+         3501.66             -822
+         3501.84             -843
+         3502.02             -891
+         3502.21             -856
+         3502.39             -790
+         3502.58             -761
+         3502.76             -719
+         3502.94             -769
+         3503.13             -758
+         3503.31             -723
+         3503.49             -682
+         3503.68             -718
+         3503.86             -697
+         3504.05             -805
+         3504.23             -916
+         3504.41             -877
+          3504.6             -753
+         3504.78             -647
+         3504.96             -573
+         3505.15             -599
+         3505.33             -616
+         3505.52             -552
+          3505.7             -501
+         3505.88             -460
+         3506.07             -436
+         3506.25             -463
+         3506.43             -477
+         3506.62             -526
+          3506.8             -472
+         3506.99             -437
+         3507.17             -444
+         3507.35             -447
+         3507.54             -508
+         3507.72             -569
+          3507.9             -570
+         3508.09             -615
+         3508.27             -632
+         3508.46             -705
+         3508.64             -767
+         3508.82             -735
+         3509.01             -675
+         3509.19             -627
+         3509.38             -671
+         3509.56             -662
+         3509.74             -609
+         3509.93             -580
+         3510.11             -580
+         3510.29             -577
+         3510.48             -530
+         3510.66             -508
+         3510.85             -575
+         3511.03             -590
+         3511.21             -607
+          3511.4             -583
+         3511.58             -549
+         3511.76             -518
+         3511.95             -537
+         3512.13             -640
+         3512.32             -687
+          3512.5             -665
+         3512.68             -652
+         3512.87             -666
+         3513.05             -735
+         3513.23             -791
+         3513.42             -796
+          3513.6             -761
+         3513.79             -716
+         3513.97             -662
+         3514.15             -718
+         3514.34             -772
+         3514.52             -722
+          3514.7             -610
+         3514.89             -587
+         3515.07             -508
+         3515.26             -555
+         3515.44             -620
+         3515.62             -619
+         3515.81             -555
+         3515.99             -464
+         3516.17             -388
+         3516.36             -455
+         3516.54             -578
+         3516.73             -596
+         3516.91             -547
+         3517.09             -582
+         3517.28             -642
+         3517.46             -678
+         3517.64             -737
+         3517.83             -739
+         3518.01             -722
+          3518.2             -740
+         3518.38             -702
+         3518.56             -670
+         3518.75             -789
+         3518.93             -764
+         3519.11             -666
+          3519.3             -565
+         3519.48             -517
+         3519.67             -503
+         3519.85             -530
+         3520.03             -502
+         3520.22             -390
+          3520.4             -352
+         3520.59             -316
+         3520.77             -336
+         3520.95             -366
+         3521.14             -444
+         3521.32             -411
+          3521.5             -379
+         3521.69             -285
+         3521.87             -265
+         3522.06             -357
+         3522.24             -386
+         3522.42             -333
+         3522.61             -277
+         3522.79             -317
+         3522.97             -320
+         3523.16             -356
+         3523.34             -324
+         3523.53             -323
+         3523.71             -287
+         3523.89             -304
+         3524.08             -324
+         3524.26             -390
+         3524.44             -465
+         3524.63             -451
+         3524.81             -324
+            3525             -261
+         3525.18             -217
+         3525.36             -253
+         3525.55             -295
+         3525.73             -299
+         3525.91             -295
+          3526.1             -354
+         3526.28             -378
+         3526.47             -385
+         3526.65             -375
+         3526.83             -330
+         3527.02             -305
+          3527.2             -286
+         3527.38             -265
+         3527.57             -278
+         3527.75             -320
+         3527.94             -374
+         3528.12             -354
+          3528.3             -403
+         3528.49             -421
+         3528.67             -437
+         3528.85             -475
+         3529.04             -412
+         3529.22             -350
+         3529.41             -317
+         3529.59             -404
+         3529.77             -397
+         3529.96             -415
+         3530.14             -421
+         3530.32             -354
+         3530.51             -326
+         3530.69             -321
+         3530.88             -366
+         3531.06             -433
+         3531.24             -437
+         3531.43             -310
+         3531.61             -251
+         3531.79             -310
+         3531.98             -344
+         3532.16             -369
+         3532.35             -323
+         3532.53             -272
+         3532.71             -273
+          3532.9             -253
+         3533.08             -239
+         3533.27             -284
+         3533.45             -356
+         3533.63             -353
+         3533.82             -294
+            3534             -252
+         3534.18             -237
+         3534.37             -200
+         3534.55             -203
+         3534.74             -177
+         3534.92             -193
+          3535.1             -166
+         3535.29             -147
+         3535.47             -157
+         3535.65             -195
+         3535.84             -216
+         3536.02             -166
+         3536.21             -258
+         3536.39             -229
+         3536.57             -361
+         3536.76             -368
+         3536.94             -395
+         3537.12             -299
+         3537.31             -240
+         3537.49             -165
+         3537.68             -225
+         3537.86             -234
+         3538.04             -154
+         3538.23              -76
+         3538.41              -45
+         3538.59             -119
+         3538.78             -190
+         3538.96             -295
+&

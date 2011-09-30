@@ -1,0 +1,12 @@
+
+Reproduction of PO_3^2- radical as described by Morton et al.
+in Mol. Phys. 4, 475, 1961.
+
+The xmgr graphics file show the obtained powder spectra using
+1st order simulation and the result obtained by numerical solution
+of the spin hamiltonian. Note that the small peaks near 3100 and
+3400 G are not real peaks. There is bug in the FFT lineshape routine 
+and these are artifacts. This fixed by now... I should regenerate
+this spectrum...
+
+

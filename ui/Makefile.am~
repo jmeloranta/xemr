@@ -1,0 +1,2 @@
+noinst_LIBRARIES = libui.a
+libui_a_SOURCES = gui.c param.c mark.c polyn.c symmetry.c calibsig.c convol.c differences.c diffout.c position.c peakout.c convert.c linewidth.c equivalence.c simpar.c heinzer.c variables.c runsimul.c runmon.c runsim.c misc.c shift.c summary.c generic.c hyperfine.c elel.c quadrupole.c alinewidth.c selectlw.c gvalue.c elw.c runml.c spec_setup.c window.c orbital.c cmhz.c hj.c

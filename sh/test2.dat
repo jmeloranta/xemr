@@ -1,0 +1,13 @@
+1
+1.5
+zero
+1.4204E9 x 1 x 2
+1.4204E9 y 1 y 2
+1.4204E9 z 1 z 2
+diag
+zero
+1 x 1
+0.0015 x 2
+print
+int
+exit

@@ -1,0 +1,10 @@
+# Two Cu atoms
+2
+0.5
+0.5
+#
+zero
+1 z 1
+1 z 2
+print
+diagonalize

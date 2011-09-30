@@ -1,0 +1,1 @@
+gcc -I../../include -O -o tn2 tn2.c ../../lib/libepr.a -lm -llapack -lblas -lrfftw -lfftw

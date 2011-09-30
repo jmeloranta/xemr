@@ -1,0 +1,26 @@
+helo
+date Thu Oct  1 11:30:08 1998
+reso 2
+harm 1
+spty 0
+saty 0
+temp 0.000000e+00
+scan 1
+gain 1.000000e+04
+timc 3.000000e-01
+ctim 4.100000e-02
+modu 5.000000e-02
+modf 1.250000e+01
+mwfq 9.420000e+09
+mwpw 0.000000e+00
+endb 3.302253e+03
+endm 5.000000e+01
+trif 1.000000e+01
+endp 7.000000e+00
+trip 9.900000e+01
+xbeg 3.265000e+03
+xend 3.295000e+03
+xuni 2
+othe 0.000000e+00
+ophi 0.000000e+00
+spha 1.800000e+02

@@ -1,0 +1,48 @@
+3
+0.5
+0.5
+0.5
+#
+# Evaluate eigen vectors and values of L2 for three spin system
+#
+# Clear Hamiltonian
+zero
+
+# (S1x + S2x + S3x)^2
+1 x 1 x 1
+1 x 1 x 2
+1 x 1 x 3
+1 x 2 x 1
+1 x 2 x 2
+1 x 2 x 3
+1 x 3 x 1
+1 x 3 x 2
+1 x 3 x 3
+
+# (S1y + S2y + S3y)^2
+1 y 1 y 1
+1 y 1 y 2
+1 y 1 y 3
+1 y 2 y 1
+1 y 2 y 2
+1 y 2 y 3
+1 y 3 y 1
+1 y 3 y 2
+1 y 3 y 3
+
+# (S1z + S2z + S3z)^2
+1 z 1 z 1
+1 z 1 z 2
+1 z 1 z 3
+1 z 2 z 1
+1 z 2 z 2
+1 z 2 z 3
+1 z 3 z 1
+1 z 3 z 2
+1 z 3 z 3
+
+# Print Hamiltonian
+print
+# Diagonalize
+diag
+exit

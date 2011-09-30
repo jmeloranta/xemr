@@ -1,0 +1,16 @@
+al		 Al atoms in RG matrix (orbital ang. mom. quenching)
+asymmlw		 Asymmetric linewdiths (hydroquinone cation radical)
+b2		 Triplet sigma state of B_2.
+boron		 Boron atoms in RG matrix (orbital ang. mom. quenching)
+cu		 Cu atoms in RG matrix. An example of large hyperfine splitting
+endor		 Simple ENDOR spectra simulation (isotropic and powder)
+endor-analysis	 1st order ENDOR spectrum analysis using fitting
+heinzer		 Simple exchange simulation examples
+high-spin	 Some high spin test examples
+hydrogen	 Numerical solution of hydrogen atom spin Hamiltonian
+hydrogen-triplet H...H triplet spectrum simulation
+hydroquinone	 Hydroquinone cation radical exchange simulation
+powder		 Simulation of various powder spectra (1st order vs. numerical)
+quadrupole	 Nuclear quadrupole coupling
+simfit		 Fitting of simulated to experimental spectra
+measurement	 Some examples of the measurement interface

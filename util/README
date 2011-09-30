@@ -1,0 +1,11 @@
+This directory contains various conversion utilities (other format -> epr
+file format).
+
+xy2epr		- file with two columns (field, intensity) to epr converter
+y2epr		- file with on column (intensity) to epr converter
+esp2epr		- Bruker ESP380 format to epr converter
+aspect2epr	- Bruker Aspect format to epr converter
+pc2epr		- pc format (used by our pc software) to epr converter
+
+jussi.eloranta@csun.edu
+

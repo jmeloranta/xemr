@@ -1,0 +1,25 @@
+3
+0.5
+0.5
+1.0
+#
+# Evaluate eigen vectors and values of JZ = Sz + Lz for two spin system
+# including orbital angular momentum (P)
+#
+# Clear Hamiltonian
+zero
+
+# Sz(1)
+1 z 1
+
+# Sz(2)
+1 z 2
+
+# Lz(1)
+1 z 3
+
+# Print Hamiltonian
+print
+# Diagonalize
+diag
+exit

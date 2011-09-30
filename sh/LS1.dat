@@ -1,0 +1,24 @@
+2
+0.5
+2.0
+#
+# Evaluate eigen vectors and values of LS for onw spin system
+# including orbital angular momentum (D)
+#
+# Clear Hamiltonian
+zero
+
+# Lx . Sx
+1 x 2 x 1
+
+# Ly . Sy
+1 y 2 y 1
+
+# Lz . Sz
+1 z 2 z 1
+
+# Print Hamiltonian
+print
+# Diagonalize
+diag
+exit

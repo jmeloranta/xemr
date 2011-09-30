@@ -1,0 +1,13 @@
+Reproduction of Knight et al. (JCP v109, p. 1409, 1988).
+
+In this work a strong mixing of triplet and singlet states of
+atomic hydrogen pairs in rare gas matrices was observed and
+simulated by using numerical solution of spin Hamiltonian.
+
+knight.xmgr shows the low field area and knight2.xmgr the high field region.
+
+NOTE: Currently there is a bug in xemr:
+
+When two energy levels cross between the division points then the
+transition moments are calculated between wrong levels. The only
+way around this now is to tighten the divisioning...

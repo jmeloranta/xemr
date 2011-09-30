@@ -1,0 +1,25 @@
+helo
+vers 0
+spty 1
+saty 0
+phas 0
+temp 0.000000e+00
+scan 0
+gain 0.000000e+00
+timc 0.000000e+00
+ctim 0.000000e+00
+modu 5.000000e-02
+modf 1.000000e+02
+mwfq 9.420000e+09
+mwpw 0.000000e+00
+endb 3.330000e+03
+endm 4.000000e+01
+trif 1.000000e+01
+endp 1.000000e+01
+trip 9.900000e+01
+xbeg 9.000000e+00
+xend 1.900000e+01
+xuni 0
+othe 0.000000e+00
+ophi 0.000000e+00
+spha 0.000000e+00

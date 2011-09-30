@@ -1,0 +1,81 @@
+Dear Jussi,
+
+Here is  the output for the hippuric acid radical:
+HIPPURIC ACID                                                           
+  2 SETS OF NUCLEI
+
+
+ INTEGRATION Parameters
+    2    0    0   96   96
+ MICROWAVE FREQUENCY= 9573.7 MHZ
+
+
+ G-TENSOR
+        2.00282        1.00000         .00000         .00000
+        2.00282         .00000        1.00000         .00000
+        2.00282         .00000         .00000        1.00000
+
+
+    2 NUCLEI WITH I=   .5
+ A-TENSOR   GN= 5.58569   Plot-intensity factor=  .00000
+      -24.22000        -.49600         .79200         .35700
+      -48.70000         .07200        -.37200         .92600
+      -81.20000         .86600         .48400         .12800
+ A-TENSOR   GN= 5.58569   Plot-intensity factor=  .00000
+      -25.46000        -.41300        -.84700        -.33400
+      -48.98000         .08100        -.40000         .91300
+      -79.06000        -.90800         .35000         .23400
+
+
+    1 NUCLEI WITH I=  1.0
+ A-TENSOR   GN=  .40376   Plot-intensity factor= 1.00000
+       -7.58000         .18500        -.43200         .88300
+       -8.47000         .98300         .05700        -.17800
+       -9.44000         .02700         .90000         .43500
+ Q-TENSOR
+        -.84300         .19500        -.39800         .89600
+         .58200         .98000         .12800        -.15700
+         .26100        -.05000         .90900         .41500
+
+
+
+   ESR line shape, units in (G)
+ LINES  SEPARATED.LT.     .000E+00 ARE ADDED
+ LINE INTENSITIES.LT.     .000E+00 ARE NEGLECTED
+ LINE WIDTH              1.000
+ GAUSSFORM
+ INTEGRAL OF SPECIFIED LINE SHAPE TAKEN
+
+
+
+   NMR line shape, units in (MHz)
+ LINES  SEPARATED.LT.     .000E+00 ARE ADDED
+ LINE INTENSITIES.LT.     .000E+00 ARE NEGLECTED
+ LINE WIDTH               .300
+ GAUSSFORM
+
+
+ START frequency     1.000  MHz  STEP   .020 MHz   401 points
+ Magnetic field at   3415.280 G
+ LADD=  0 PROC=   1.00000
+ Spectrum written to file:hipq01.plt      
+ 
+Time=  324.89 seconds
+
+I recalculated the ENDOR spectrum from  Roland's data with my PC (Dell
+Optiplex Pro, 200 MHz)
+Integration procedure  ... 96 96 means the number of theta and fi angles
+Did you prepare an interphase to write input data? This is a weak point in
+our program. 
+Long time ago you asked  if we have lasers. Martina borrowed a pulsed laser
+and managed to interphase it with Elexsys to obtain time resolved spectra of
+a model system for photosynthesis. We had to return the laser to the owner
+in Stockholm. We have later joined with the physisists in material science
+to make an EMR-centre, see http://www.ifm.liu.se/simarc/. They have plenty
+of lasers that you might borrow.   
+Best regards, Anders
+Anders Lund                            			 tel 46-13-282665
+Department of Physics and Measurement Technology	 fax 46-13-137568
+Linkoping University				 e-Mail ald@ifm.liu.se
+Sweden					
+

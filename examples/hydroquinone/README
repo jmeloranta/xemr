@@ -1,0 +1,88 @@
+
+This directory contains example application of the Norris exchange
+model as applied for the exchange problem of the hydroquinone cation
+radical (four jump model). This is essentially a reproduction of the 
+exchange simulation part of J. Eloranta et al., Magn. Reson. Chem. 36, 98
+(1998). At specific temperature the simulated spectrum is fitted to
+the experimental spectrum yielding the first order rate constants for
+jump process. The activation energy for the rotation is then obtained
+from the Arrhenius plot (arrhenius.xmgr). Note that this is a complete
+reanalyzation of the EPR spectra which yields essentially the same
+result as in the above Ref. 
+
+Since the simulation fitting process contains a huge amount of parameters
+(we have four spectra here!) the number of parameters must be reduced
+in some way. Fortunately most of the parameters are the same and can
+be delt with using the equivalency editor. The hyperfine couplings
+were entered as (in Gauss; only approximate values are shown here):
+
+Orientation 1 | Orientation 2 | Orientation 3 | Orientation 4	# of protons
+-----------------------------------------------------------------------------
+3.46		3.46		3.46		3.46		2
+2.00		2.40		2.50		2.13		1
+2.00		2.13		2.50		2.40		1
+2.50		2.13		2.00		2.40		1
+2.50		2.40		2.00		2.13		1
+
+Note that the order in which HFC:s are entered is critical because it
+affects the order of the generated peaks. This is the same requirement
+as in esrexn program by Heinzer. The exchange is performed
+with the peaks which the same occurrence indices. Now we need to set
+the following equivalences (spectrum index, hfc index):
+
+hfc(1,1) = hfc(2,1) = hfc(3,1) = hfc(4,1)
+hfc(1,2) = hfc(1,3) = hfc(3,4) = hfc(3,5)
+hfc(1,4) = hfc(1,5) = hfc(3,2) = hfc(3,3)
+
+hfc(2,2) = hfc(2,5) = hfc(4,3) = hfc(4,4)
+hfc(2,3) = hfc(2,4) = hfc(4,2) = hfc(4,5)
+
+and furthermore we can safly assume the following equivalences:
+
+lw(1) = lw(2) = lw(3) = lw(4)
+pos(1) = pos(2) = pos(3) = pos(4)
+
+where lw denotes the linewidth and pos the g-value for the center
+of the spectrum. This leaves the following variables for optimization:
+
+hfc(1,1), hfc(1,2), hfc(1,4), hfc(2,2), hfc(2,3), lw(1), pos(1), and
+the Norris exchange rate. All these required settings have been
+issued in *.sps files in this directory.
+
+Some general hints for this type of fitting:
+
+- The "non-moving peaks" do not broaden which means that they can be used
+  for obtaining the line width. Also the broadening should take place
+  when the IHFC (in MHz) is of the same order as the exchange rate constant.
+- Be careful that the correct intensity is obtained. The rate constant and
+  intensity may have dependencies.
+- Use mc_limit's wisely: begin with large mc_limits and the narrow to the
+  smaller values.
+- Finally include only intensity, linewidth and the rate constant in
+  the optimization and repeat the mc_limit variation.
+- Double check your variable and equivalence settings. Especially the
+  equivalence settings get set incorrectly very easily.
+
+The following scripts are also provided:
+
+extract-rate.csh  - Extract rate constant and temperature data (X, Y pairs)
+extract-error.csh - Extract simulation RMS error as a function of temperature
+extract-oh.csh    - Extract hydroxyl group IHFC as a function of temperature
+
+The file hyperfine.xmgr demonstrates the hydroxyl proton IHFC temperature
+dependence as obtained in 270 K - 300 K region. This behaviour should be
+linear in this region. The non-linear part may be obtained at low temperature
+region (around 150 K).
+
+NOTE: By the Norris method one obtains the *average rate constant* among
+all different structures. This means that the rate constant obtained
+in this example is really k_av = (4*k_1 + 2*k_2) / 6 where k_1 is the rate
+constant for single OH-flip and k_2 for double OH-flip. Since the barrier
+for double OH flip is approx. twice the single OH flip then we assume that
+k_2 = 0 which means that k_av = 2*k_1 / 3. The extra 2/3 does not contribute
+to the activation energy obtained by the Arrhenius plot. The constant
+part only shows up when obtaining the activation entropy. The Heinzer method
+can deal with this problem more easily where rate constants between each
+structure may be obtained.
+
+

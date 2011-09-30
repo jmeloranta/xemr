@@ -1,0 +1,11 @@
+Begin3
+Title:		Xemr EPR spectrum manipulation and simulation
+Version:	0.8
+Entered-date:	27JUL98
+Description:	Graphical EPR spectrum manipulation and simulation package
+Keywords:	EPR ESR EMR spectrum manipulation simulation
+Author:		Jussi Eloranta
+Maintained-by:	Jussi Eloranta (eloranta@jyu.fi)
+Primary-site:	epr.chem.jyu.fi:/pub/xemr		
+Copying-policy:	GPL
+End

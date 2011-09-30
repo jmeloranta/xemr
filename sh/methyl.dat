@@ -1,0 +1,27 @@
+4
+0.5
+0.5
+0.5
+0.5
+# First is electron spin
+zero
+# Everything in GHz
+# electron zeeman
+8.391 z 1
+# el - nucl_1
+0.07 x 1 x 2
+0.07 y 1 y 2
+0.07 z 1 z 2
+# el - nucl_2
+0.07 x 1 x 3
+0.07 y 1 y 3
+0.07 z 1 z 3
+# el - nucl_3
+0.07 x 1 x 4
+0.07 y 1 y 4
+0.07 z 1 z 4
+#
+print
+diag
+exit
+
