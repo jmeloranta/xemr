@@ -23,7 +23,6 @@
 
 #include <time.h>
 #include "xemr.h"
-#include "../config.h"
 #ifdef LIBMEAS
 #include <meas/meas.h>
 #endif
@@ -337,7 +336,7 @@ void measure_endor(epr_type *sp, int (*upd)(epr_type *, int, int), double (*ply)
     if(measure_verbose) fprintf(stderr, "Talking to RF counter...");
     switch(spectr.rfcounter) {
     case 2:
-      sp->xbeg = meas_hp5384_read(0, HP5384_CHA) / 1.0E6; /* CH1 = ENDOR field */
+      sp->xbeg = meas_hp5384_read(0, MEAS_HP5384_CHA) / 1.0E6; /* CH1 = ENDOR field */
       break;
     case 3:
       sp->xbeg = meas_hp53131_read(0,1) / 1.0E6;
@@ -409,7 +408,7 @@ void measure_endor(epr_type *sp, int (*upd)(epr_type *, int, int), double (*ply)
     if(measure_verbose) fprintf(stderr, "Talking to RF counter...");
     switch(spectr.rfcounter) {
     case 2:
-      sp->xend = meas_hp5384_read(0, HP5384_CHA) / 1.0E6; /* get the actual freq */
+      sp->xend = meas_hp5384_read(0, MEAS_HP5384_CHA) / 1.0E6; /* get the actual freq */
       break;
     case 3:
       sp->xend = meas_hp53131_read(0,1) / 1.0E6;
@@ -539,7 +538,7 @@ void measure_tripleg(epr_type *sp, int (*upd)(epr_type *, int, int), double (*pl
 	  if(measure_verbose) fprintf(stderr, "Talking to RF counter...");
 	  switch(spectr.rfcounter) {
 	  case 2:
-	    sp->xbeg = meas_hp5384_read(0, HP5384_CHA);
+	    sp->xbeg = meas_hp5384_read(0, MEAS_HP5384_CHA);
 	    break;
 	  case 3:
 	    sp->xbeg = meas_hp53131_read(0,1);
@@ -576,7 +575,7 @@ void measure_tripleg(epr_type *sp, int (*upd)(epr_type *, int, int), double (*pl
   if(measure_verbose) fprintf(stderr, "Talking to RF counter...");
   switch(spectr.rfcounter) {
   case 2:
-    sp->xend = meas_hp5384_read(0, HP5384_CHA); /* get the actual freq */
+    sp->xend = meas_hp5384_read(0, MEAS_HP5384_CHA); /* get the actual freq */
     break;
   case 3:
     sp->xend = meas_hp53131_read(0,1);
@@ -707,7 +706,7 @@ void measure_triples(epr_type *sp, int (*upd)(epr_type *, int, int), double (*pl
 	  if(measure_verbose) fprintf(stderr, "Talking to RF counter...");
 	  switch(spectr.rfcounter) {
 	  case 2:
-	    sp->xbeg = meas_hp5384_read(0, HP5384_CHA);
+	    sp->xbeg = meas_hp5384_read(0, MEAS_HP5384_CHA);
 	    break;
 	  case 3:
 	    sp->xbeg = meas_hp53131_read(0,1);
@@ -744,7 +743,7 @@ void measure_triples(epr_type *sp, int (*upd)(epr_type *, int, int), double (*pl
   if(measure_verbose) fprintf(stderr, "Talking to RF counter...");
   switch(spectr.rfcounter) {
   case 2:
-    sp->xend = meas_hp5384_read(0, HP5384_CHA); /* get the actual freq */
+    sp->xend = meas_hp5384_read(0, MEAS_HP5384_CHA); /* get the actual freq */
     break;
   case 3:
     sp->xend = meas_hp53131_read(0,1);

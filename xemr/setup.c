@@ -6,7 +6,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "xemr.h"
-#include "../config.h"
 #ifdef LIBMEAS
 #include <meas/meas.h>
 #endif
@@ -271,5 +270,5 @@ void spectrometer_setup() {
     printf("Warning: no ENDOR unit defined.\n");
     break;
   }
-#endif ?* LIBMEAS */
+#endif /* LIBMEAS */
 }

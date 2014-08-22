@@ -1,6 +1,0 @@
-#!/bin/bash
-make distclean
-\rm *.o *~ *.cache config.log libtool aclocal.m4 config.h.in compile */Makefile.in
-\rm -rf .deps stamp-h1 autom4te.cache .libs
-\rm config.h Makefile config.status Makefile.in depcomp COPYING INSTALL missing
-\rm ltmain.sh install-sh config.sub config.guess configure config.in confg.h.in
