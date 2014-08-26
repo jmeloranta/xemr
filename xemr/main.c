@@ -540,6 +540,9 @@ void callback_file(FL_OBJECT *obj, long parm) {
       *str3 = 0;
       chdir(buf);
     }
+    /* New: automatically convert to bruker format too */
+    sprintf(buf, "epr2esp %s %s", sp[page]->fname, sp[page]->fname);
+    system(buf);
     return;
   }
 
