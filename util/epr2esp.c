@@ -71,6 +71,7 @@ int main(argc, argv) int argc; char **argv; {
   fprintf(fp, "JSD %d\r", sp->scans);
   fprintf(fp, "JEX epr\r"); /* for now */
   fprintf(fp, "TE %le\r", sp->temperature);
+  fprintf(fp, "GST %le\r", midrange);
   fprintf(fp, "HCF %le\r", midrange);
   fprintf(fp, "HSW %le\r", scanrange);
   fprintf(fp, "MF %le\r", sp->frequency);
