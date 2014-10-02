@@ -110,7 +110,7 @@ void measure_epr(epr_type *sp, int (*upd)(epr_type *, int, int), double (*ply)(i
   switch(spectr.magnet) {
   case 2:
     meas_er032_write(0, ofield);
-    sleep(5);
+    sleep(2);
     break;
   }
   if(measure_verbose) fprintf(stderr, "...done.\n");
@@ -148,7 +148,7 @@ void measure_epr(epr_type *sp, int (*upd)(epr_type *, int, int), double (*ply)(i
       switch(spectr.magnet) {
       case 2:
 	meas_er032_write(0, cfield);
-	sleep(5);
+	sleep(2);
 	break;
       }
       if(measure_verbose) fprintf(stderr, "...done.\n");
@@ -296,7 +296,7 @@ void measure_endor(epr_type *sp, int (*upd)(epr_type *, int, int), double (*ply)
   switch(spectr.magnet) {
   case 2:
     meas_er032_write(0, sp->endor_b);
-    sleep(5);
+    sleep(2);
     break;
   }
   if(measure_verbose) fprintf(stderr, "...done.\n");

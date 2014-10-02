@@ -171,7 +171,7 @@ int update_spectrum(epr_type *sp, int pos, int sweep) {
   extern void draw_spectrum();
   int tmp;
 
-  tmp = 16 * sp->samples / 1024;
+  tmp = 4 * sp->samples / 1024;
   if(!tmp) tmp = 1;
   if(!(pos % tmp)) {
     draw_spectrum();
