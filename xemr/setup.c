@@ -186,12 +186,12 @@ void spectrometer_setup() {
     printf("Warning: experiments cannot be run without signal channel.\n");
     break;
   case 2: /* ER 023 */
-    meas_er023_init(0, 0, spectr.sigchan_id);
+    meas_er023_open(0, 0, spectr.sigchan_id);
     meas_er023_calibrate(0, spectr.field_mod_freq, spectr.field_mod_max, spectr.signal_phase_max);
     meas_er023_resonator(0, 1);               /* EPR modulation output */
     break;
   case 3: /* SR245 - TREPR (experiment trigger from ttl port 1) */
-    meas_sr245_init(0, 0, spectr.sigchan_id, NULL); /* GPIB mode */
+    meas_sr245_open(0, 0, spectr.sigchan_id, NULL); /* GPIB mode */
     meas_sr245_disable_trigger(0);
     meas_sr245_mode(0, 1); /* sync mode */
     meas_sr245_ports(0, 8); /* all 8 ports as inputs */
@@ -206,7 +206,7 @@ void spectrometer_setup() {
     printf("Note: no microwave frequency counter.\n");
     break;
   case 2: /* HP 5350 */
-    meas_hp5350_init(0, 0, spectr.mwcounter_id);
+    meas_hp5350_open(0, 0, spectr.mwcounter_id);
     break;
   default:
     printf("Warning: microwave counter not defined.\n");
@@ -218,7 +218,7 @@ void spectrometer_setup() {
     printf("Warning: experiments cannot be run without magnet control.\n");
     break;
   case 2: /* ER-032 */
-    meas_er032_init(0, 0, spectr.magnet_id);
+    meas_er032_open(0, 0, spectr.magnet_id);
     break;
   default:
     printf("Warning: magnet control not defined.\n");
@@ -230,7 +230,7 @@ void spectrometer_setup() {
     printf("Note: no gaussmeter.\n");
     break;
   case 2: /* Varian E-500 */
-    meas_e500_init(0, 0, spectr.gaussmeter_id);
+    meas_e500_open(0, 0, spectr.gaussmeter_id);
     break;
   default:
     printf("Warning: no gaussmeter defined.\n");
@@ -242,10 +242,10 @@ void spectrometer_setup() {
     printf("Note: no RF counter.\n");
     break;
   case 2: /* HP 5384 */
-    meas_hp5384_init(0, 0, spectr.rfcounter_id);
+    meas_hp5384_open(0, 0, spectr.rfcounter_id);
     break;
   case 3: /* HP 53131 */
-    meas_hp53131_init(0, 0, spectr.rfcounter_id);
+    meas_hp53131_open(0, 0, spectr.rfcounter_id);
     break;
   default:
     printf("Warning: RF counter not defined.\n");
@@ -257,7 +257,7 @@ void spectrometer_setup() {
     printf("Note: no ENDOR unit.\n");
     break;
   case 2: /* aspect */
-    meas_sl_init();
+    meas_sl_open();
     meas_sl_pts(15.0);
     meas_sl_wtk(15.0);
     meas_sl_attn1(63);
